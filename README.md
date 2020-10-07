@@ -21,13 +21,15 @@
 ## CSS
 
 1. outline 与 border 的区别
-2.
 
 ## JavaScript
 
 1. JavaScript 中的继承。
 2. Array.prototype.flat() 为什么只能 flat 一层？
 3. 用 setTimeout 实现动画，以及 setTimeout 的原理。
+4. 类数组与数组以及类数组在 typescript 中的类型。
+5. 为什么说“函数是一等公民”
+6. number 和 Number 的区别
 
 ### DOM
 
@@ -35,3 +37,33 @@
 2. onclick 和 addEventListener 的区别
 3. 属性 nodeType 的应用
 4. HTML-DOM 和 DOM Core, CSS-DOM
+
+### TypeScript
+
+1. 元组
+2. interface 与 type 的区别
+3. typescript 中的面向对象。
+4. implements
+5. Enum 的实现方式，常量枚举，以及
+
+```ts
+enum Direction {
+  Up,
+  Down
+}
+
+console.log( 0 === Direction.Up)
+```
+
+1. 范型
+
+## 工程化
+
+1. npm, npx, yarn, nvm, ts-node, tsc 这些名次的区别。
+
+### SSR
+
+### SEO
+
+1. WIP[ssr 优化 seo 入门](./src/ssr优化seo入门.md)
+2. prerender 预渲染技术
