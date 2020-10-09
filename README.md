@@ -24,7 +24,7 @@
 
 ## JavaScript
 
-1. JavaScript 中的继承。
+1. [JavaScript 中的继承](./src/JavaScript中的继承.md)
 2. Array.prototype.flat() 为什么只能 flat 一层？
 3. 用 setTimeout 实现动画，以及 setTimeout 的原理。
 4. 类数组与数组以及类数组在 typescript 中的类型。
