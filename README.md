@@ -18,6 +18,14 @@
 
 ### 排序算法
 
+## C
+
+1. `printf("%lf", 3/2);` 为什么输出 `0.0000`.
+
+### GDB
+
+1. [GDB 入门](./src/gdb入门.md)
+
 ## CSS
 
 1. outline 与 border 的区别
