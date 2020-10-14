@@ -2,7 +2,13 @@
 
 > 承认痛苦的无用性。
 
-## 算法
+## 软件工程
+
+1. [DevOps 流程](./src/DevOps/README.md)
+
+---
+
+## 计算机理论基础
 
 ### 数据表示
 
@@ -11,12 +17,30 @@
 3. 使用位运算来判断二进制中是否包含奇数个 1.  CSAPP 2.65
 4. 二进制中最左侧的 1. CSAPP 2.66
 
+### 汇编
+
+1. 进位标记位(CF) 与 溢出标记位(OF) 的区别。 有符号无符号、示例、寄存器中的存储形式
+2. x86 中标记位的含义
+
+---
+
+## 算法与数据结构
+
 ### 数论
 
-1. [关于斐波那契数列，我知道的都在这里了](./src/关于斐波那契数列，我知道的都在这里了.md)
-2. [判断素数的一些方法](./src/判断素数的一些方法.md)
+1. [关于斐波那契数列，我知道的都在这里了](./src/斐波那契数列/README.md)
+2. [判断素数的一些方法](./src/判断素数方法/README.md)
 
 ### 排序算法
+
+---
+
+## Linux
+
+1. [Linux 常见指令](./src/Linux/Linux常见指令.md)
+1. [Linux 目录结构](./src/Linux/Linux目录结构.md)
+
+---
 
 ## C
 
@@ -24,7 +48,20 @@
 
 ### GDB
 
-1. [GDB 入门](./src/gdb入门.md)
+1. [GDB 入门](./src/GDB入门/README.md)
+
+---
+
+## Rust
+
+1. Rust 这种内存安全的语言是如何处理闭包的？
+
+---
+
+## HTML
+
+1. [HTML 中异步加载 JS 文件](./src/HTML中异步加载JS文件/README.md)
+2. [搞懂 script 标签中 defer 和 async](./src/搞懂script标签中defer和async/README.md)
 
 ## CSS
 
@@ -32,19 +69,17 @@
 
 ## JavaScript
 
-1. [JavaScript 中的继承](./src/JavaScript中的继承.md)
+1. [JavaScript 中的继承](./src/JavaScript中的继承/README.md)
 2. Array.prototype.flat() 为什么只能 flat 一层？
 3. 用 setTimeout 实现动画，以及 setTimeout 的原理。
 4. 类数组与数组以及类数组在 typescript 中的类型。
 5. 为什么说“函数是一等公民”
 6. number 和 Number 的区别
+7. 装饰器
 
-### DOM
+### node.js
 
-1. DOM 操作中 querySelector 和 getElementById 的区别。 （后者可以 .style -> 区别）
-2. onclick 和 addEventListener 的区别
-3. 属性 nodeType 的应用
-4. HTML-DOM 和 DOM Core, CSS-DOM
+1. 从 I/O 密集与 CPU 密集谈一谈 node.js （单线程，异步，非阻塞I/O, 事件驱动，node 中间层的实际作用）
 
 ### TypeScript
 
@@ -65,13 +100,38 @@ console.log( 0 === Direction.Up)
 
 1. 范型
 
-## 工程化
+### React
 
-1. npm, npx, yarn, nvm, ts-node, tsc 这些名次的区别。
+1. React API 示例：从搭建一个脚手架开始
+2. `static getDerivedStateFromProps` 示例
+
+### BOM: Browser Object Model
+
+### DOM: Document Object Model
+
+1. DOM 操作中 querySelector 和 getElementById 的区别。 （后者可以 .style -> 区别）
+2. onclick 和 addEventListener 的区别
+3. 属性 nodeType 的应用
+4. HTML-DOM 和 DOM Core, CSS-DOM
+
+## 前端工程化
+
+1. npm, npx, yarn, nvm, ts-node, tsc 这些名词的区别。
+2. javascript 模块化
 
 ### SSR
 
 ### SEO
 
-1. WIP[ssr 优化 seo 入门](./src/ssr优化seo入门.md)
+1. WIP[ssr 优化 seo 入门](./src/ssr优化seo入门/README.md)
 2. prerender 预渲染技术
+
+### Hybrid
+
+1. [Hybrid 入门](./src/Hybrid入门/README.md)
+
+---
+
+## 机器学习
+
+1. k-近邻算法

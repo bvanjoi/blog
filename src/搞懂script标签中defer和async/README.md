@@ -1,0 +1,1 @@
+# 搞懂 script 标签中 defer 和 async

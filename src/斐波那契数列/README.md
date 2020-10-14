@@ -168,8 +168,6 @@ function FibonacciN(n) {
     return matrixMultiply(FibonacciN(n / 2), FibonacciN(n / 2));
   }
 }
-
-console.log(FibonacciN(1000 + 1)[0][1]); //+1是为了与题目要求相同
 ```
 
 该方法运行时间为对数量级，相比于线性时间可谓是质的提升。另外，该方法的空间复杂度也为对数量级。
