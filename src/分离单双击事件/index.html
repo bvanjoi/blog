@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Click</title>
+</head>
+<body>
+  <button id="btn">test</button>
+  <script>
+    const btn = document.getElementById('btn');
+
+    let time = 200;
+    let timeOut = null;
+
+    btn.onclick = () => {
+      clearTimeout(timeOut);
+      timeOut = setTimeout( () => {
+        console.log('single click')
+      }, time);
+    }
+    btn.ondblclick = () => {
+      clearTimeout(timeOut);
+      console.log('double click');
+    }
+  </script>
+</body>
+</html>

@@ -75,7 +75,12 @@
 4. 类数组与数组以及类数组在 typescript 中的类型。
 5. 为什么说“函数是一等公民”
 6. number 和 Number 的区别
-7. 装饰器
+7. 为什么 0.1 + 0.2 === 0.3 返回 false.
+8. 装饰器
+9. 不同函数调用方式下的 this 指向
+10. 箭头函数
+11. 闭包
+12. [分离单双击事件](./src/分离单双击事件/README.md)
 
 ### node.js
 
@@ -119,6 +124,10 @@ console.log( 0 === Direction.Up)
 1. npm, npx, yarn, nvm, ts-node, tsc 这些名词的区别。
 2. javascript 模块化
 
+### webpack
+
+1. [写一个 webpack 插件](./src/写一个webpack插件/README.md)
+
 ### SSR
 
 ### SEO
@@ -134,4 +143,4 @@ console.log( 0 === Direction.Up)
 
 ## 机器学习
 
-1. k-近邻算法
+1. [k-近邻算法](./src/k近邻算法/README.md)
