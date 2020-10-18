@@ -48,6 +48,14 @@
 
 1. [[WIP]全排列](./src/全排列/README.md)
 
+### 回溯
+
+<<<<<<< HEAD
+1. [全排列](./src/全排列/README.md)
+=======
+1. WIP [全排列](./src/全排列/README.md)
+>>>>>>> 全排列算法
+
 ### 排序算法
 
 ---
@@ -164,7 +172,11 @@ console.log( 0 === Direction.Up)
 
 ### SEO
 
+<<<<<<< HEAD
 1. [[WIP]ssr 优化 seo 入门](./src/ssr优化seo入门/README.md)
+=======
+1. WIP [ssr 优化 seo 入门](./src/ssr优化seo入门/README.md)
+>>>>>>> 全排列算法
 2. prerender 预渲染技术
 
 ### React
