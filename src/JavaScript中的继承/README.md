@@ -42,7 +42,7 @@ var person = {
 
 ### `__proto__` 和 `prototype`
 
-- `__proto__`: 隐式原型，JavaScript 中的**任何对象**都有一个内置属性 `[[prototype]]`, ES5 之前没有标准方法来访问该内置属性，但大多数浏览器都通过 `__proto__` 来访问。ES5 中增加了对这个内置属性标准的 get 方法 `Object.getPrototypeOf()`.
+- `__proto__`: 隐式原型，该属性的作用是：如果在当前对象 obj 找不到某属性，则会沿着其 `obj.__proto__` 继续寻找。JavaScript 中的**任何对象**都有一个内置属性 `[[prototype]]`, ES5 之前没有标准方法来访问该内置属性，但大多数浏览器都通过 `__proto__` 来访问。ES5 中增加了对这个内置属性标准的 get 方法 `Object.getPrototypeOf()`.
 - `prototype`: 显示原型，**函数**创建之后都会有一个名为 `prototype` 的属性，这个属性指向函数的原型对象。
 
 对象的 `__proto__` 指向的是其构造函数的 `prototype`.

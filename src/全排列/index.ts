@@ -1,4 +1,3 @@
-
 function permutation(arr:number[]):number[][] {
   let hash = arr.map(v => 0);
   let res: number[][] = [];

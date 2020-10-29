@@ -33,19 +33,25 @@
 
 1. [关于斐波那契数列，我知道的都在这里了](./src/斐波那契数列/README.md)
 2. [判断素数的一些方法](./src/判断素数方法/README.md)
+3. 蔡勒公式
+4. 汉诺塔
 
 ### 回溯
 
-1. WIP [全排列](./src/全排列/README.md)
+1. [[WIP]全排列](./src/全排列/README.md)
 
 ### 排序算法
 
 ---
 
-## Linux
+## Unix
+
+1. Shebang
+
+### Linux
 
 1. [Linux 常见指令](./src/Linux/Linux常见指令.md)
-1. [Linux 目录结构](./src/Linux/Linux目录结构.md)
+2. [Linux 目录结构](./src/Linux/Linux目录结构.md)
 
 ---
 
@@ -61,6 +67,10 @@
 
 ## Rust
 
+> 多年之后，奥雷连诺上校站在内存溢出的程序前，会想起技术沙龙上没好好听 Rust 的那个遥远的下午。
+
+1. [Rust-learn: 1. 从安装到 Hello World](./src/Rust-learn/1.安装/README.md)
+
 1. Rust 这种内存安全的语言是如何处理闭包的？
 
 ---
@@ -73,25 +83,33 @@
 ## CSS
 
 1. outline 与 border 的区别
+2. 没有 outline-radius 的 outline 如何实现圆角
 
 ## JavaScript
 
 1. [JavaScript 中的继承](./src/JavaScript中的继承/README.md)
-2. Array.prototype.flat() 为什么只能 flat 一层？
-3. 用 setTimeout 实现动画，以及 setTimeout 的原理。
-4. 类数组与数组以及类数组在 typescript 中的类型。
-5. 为什么说“函数是一等公民”
-6. number 和 Number 的区别
-7. 为什么 0.1 + 0.2 === 0.3 返回 false.
-8. 装饰器
-9. 不同函数调用方式下的 this 指向
-10. 箭头函数
+2. [JavaScript 中覆盖继承的对象](./src/JavaScript中覆盖继承的对象/README.md)
+3. Array.prototype.flat() 为什么只能 flat 一层？
+4. 用 setTimeout 实现动画，以及 setTimeout 的原理。
+5. 类数组与数组以及类数组在 typescript 中的类型。
+6. 为什么说“函数是一等公民”
+7. number 和 Number 的区别
+8. 为什么 0.1 + 0.2 === 0.3 返回 false.
+9. 装饰器
+10. 不同函数调用方式下的 this 指向
 11. 闭包
 12. [分离单双击事件](./src/分离单双击事件/README.md)
+13. [event loop](./src/事件循环/README.md)
+14. [JavaScript 中 Date 类型](./src/JavaScript的Date类型/README.md)
+
+### ES6
+
+1. [箭头函数](./src/箭头函数/README.md)
 
 ### node.js
 
 1. 从 I/O 密集与 CPU 密集谈一谈 node.js （单线程，异步，非阻塞I/O, 事件驱动，node 中间层的实际作用）
+2. node 在控制台的输出带样式及原理
 
 ### TypeScript
 
@@ -112,24 +130,23 @@ console.log( 0 === Direction.Up)
 
 1. 范型
 
-### React
-
-1. React API 示例：从搭建一个脚手架开始
-2. `static getDerivedStateFromProps` 示例
-
 ### BOM: Browser Object Model
 
 ### DOM: Document Object Model
 
-1. DOM 操作中 querySelector 和 getElementById 的区别。 （后者可以 .style -> 区别）
+1. DOM 操作中 querySelector 和 getElementById 的区别。 （后者可以 .style -> 区别，后者更快一点）
 2. onclick 和 addEventListener 的区别
 3. 属性 nodeType 的应用
 4. HTML-DOM 和 DOM Core, CSS-DOM
+5. is innerHTML asynchronous? [reference](https://stackoverflow.com/questions/42986295/is-innerhtml-asynchronous)
+
+------
 
 ## 前端工程化
 
-1. npm, npx, yarn, nvm, ts-node, tsc 这些名词的区别。
+1. npm, npx, nrm, yarn, nvm, ts-node, tsc 这些名词的区别。
 2. javascript 模块化
+3. `package.json` 中各个 key 值的作用。
 
 ### webpack
 
@@ -139,8 +156,13 @@ console.log( 0 === Direction.Up)
 
 ### SEO
 
-1. WIP [ssr 优化 seo 入门](./src/ssr优化seo入门/README.md)
+1. [[WIP]ssr 优化 seo 入门](./src/ssr优化seo入门/README.md)
 2. prerender 预渲染技术
+
+### React
+
+1. [[WIP]从搭建一个 React 脚手架开始](./src/从搭建一个React脚手架开始/README.md)
+2. `static getDerivedStateFromProps` 示例
 
 ### Hybrid
 

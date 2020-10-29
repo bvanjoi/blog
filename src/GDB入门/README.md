@@ -37,19 +37,24 @@ GDB 是 Unix 下的调试工具。
 - `break`: 简写为 `b`, 设置断点：
   - `b function_name`: 根据函数名来打断点。
   - `b *address`: 根据地址来打断点。
-
 - `clear`: 删除所选环境中的断点；
 - `info break`: 简写为 `i b`, 查看断点信息。
 
 #### 查看内容
 
 - `where`: 查看当前所处的地址。
+- `whatis`: 查看某个变量的数据类型。
 - `info`: 简写为 `i`, 用于显示各类信息，可用`help i`查阅其用法：
   - `i registers`: 简写为 `i r`, 查看当前寄存器内的值（除了浮点数寄存器）。
-  - `i all-registers`: 查看当前寄存器内的值。
+  - `i all-registers`: 查看所有寄存器内的值。
+  - `i frame`: 简写为 `i f`, 查看当前堆栈信息。
 - `print`: 简写为 `p`,
   - `p $register` 查看某个寄存器内的值。
 - `examine`: 简写为 `x`, 用来查看内存地址中的值
+- `list`: 打印当前行之后的源码
+  - `list <line>`: 打印 line 行代码
+  - `list -`: 打印当前行前面的代码
+- `disas`: 显示当前行之后的汇编代码
 
 #### 监控
 
