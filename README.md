@@ -4,7 +4,15 @@
 
 ## 软件工程
 
+### DevOps
+
 1. [DevOps 流程](./src/DevOps/README.md)
+
+### CI/CD
+
+1. [GitLab-CI/CD](./src/CICD/README.md)
+
+### Git
 
 ---
 
@@ -70,6 +78,7 @@
 > 多年之后，奥雷连诺上校站在内存溢出的程序前，会想起技术沙龙上没好好听 Rust 的那个遥远的下午。
 
 1. [Rust-learn: 1. 从安装到 Hello World](./src/Rust-learn/1.安装/README.md)
+2. [Rust-learn: 2. 15 分钟学 Rust](./src/Rust-learn/2.通用编程概念/README.md)
 
 1. Rust 这种内存安全的语言是如何处理闭包的？
 
@@ -140,7 +149,7 @@ console.log( 0 === Direction.Up)
 4. HTML-DOM 和 DOM Core, CSS-DOM
 5. is innerHTML asynchronous? [reference](https://stackoverflow.com/questions/42986295/is-innerhtml-asynchronous)
 
-------
+---
 
 ## 前端工程化
 

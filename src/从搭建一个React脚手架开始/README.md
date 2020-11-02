@@ -53,5 +53,8 @@ touch index.js && cd ..
 - 打包、热更新、模块化，因此需要 webpack.
 - 单元测试，因此需要 jest.
 - 语法检查、代码格式化，因此需要 eslint, prettier.
+- git 时的 commit 检查，因此需要 husky.
 
-----
+对此，我们首先提供一个模版：[b-react](https://github.com/bvanjoi/b-react)
+
+> 暂停一下，先学 node 去了。。。
