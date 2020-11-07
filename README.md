@@ -79,8 +79,7 @@
 
 1. [Rust-learn: 1. 从安装到 Hello World](./src/Rust-learn/1.安装/README.md)
 2. [Rust-learn: 2. 15 分钟学 Rust](./src/Rust-learn/2.通用编程概念/README.md)
-
-1. Rust 这种内存安全的语言是如何处理闭包的？
+3. Rust 这种内存安全的语言是如何处理闭包的？
 
 ---
 
@@ -153,7 +152,7 @@ console.log( 0 === Direction.Up)
 
 ## 前端工程化
 
-1. npm, npx, nrm, yarn, nvm, ts-node, tsc 这些名词的区别。
+1. npm, npx, nrm, yarn, nvm, ts-node, tsc, yrm 这些名词是什么。
 2. javascript 模块化
 3. `package.json` 中各个 key 值的作用。
 
@@ -171,7 +170,7 @@ console.log( 0 === Direction.Up)
 ### React
 
 1. [[WIP]从搭建一个 React 脚手架开始](./src/从搭建一个React脚手架开始/README.md)
-2. `static getDerivedStateFromProps` 示例
+2. [自定义组件头字母为什么要大写？](./src/自定义组件头字母为什么要大写/README.md)
 
 ### Hybrid
 
