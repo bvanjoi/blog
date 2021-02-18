@@ -51,6 +51,7 @@ rustc --version
 
 - VSCode + Rust 插件 + Code Runner 插件
 - CLion + Rust 插件
+- SpaceVim + Rust 语法
 
 ## 再从 Hello World 出发
 
