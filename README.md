@@ -39,14 +39,17 @@
 
 ---
 
+## 计算机网络
+
+1. [数据传输方式](./src/数据传输方式/README.md)
+
+---
+
 ## 算法与数据结构
 
 1. N 皇后的两种解法：回溯与 SAT
 2. 蓄水池抽样算法 leetcode 382
-
-## 计算机网络
-
-1. [数据交换方式](./src/数据交换方式/README.md)
+3. 更多可见算法与数据结构可见[Rust 实现算法](https://github.com/bvanjoi/Algorithm)
 
 ### 数论
 
@@ -54,12 +57,6 @@
 2. [判断素数的一些方法](./src/判断素数方法/README.md)
 3. 蔡勒公式
 4. 汉诺塔
-
-### 回溯
-
-1. [[WIP]全排列](./src/全排列/README.md)
-
-### 排序算法
 
 ---
 
@@ -192,6 +189,8 @@ console.log( 0 === Direction.Up)
 1. [写一个 webpack 插件](./src/写一个webpack插件/README.md)
 
 ### SSR
+
+1. [将 `typeof` 用于 SSR 中](./src/将typeof用于SSR中/README.md)
 
 ### SEO
 
