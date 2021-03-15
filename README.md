@@ -43,6 +43,10 @@
 
 1. [数据传输方式](./src/数据传输方式/README.md)
 
+### HTTP
+
+1. [URI, URL, URN](./src/URI与URL与URN/README.md)
+
 ---
 
 ## 算法与数据结构
