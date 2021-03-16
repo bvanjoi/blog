@@ -61,6 +61,20 @@ console.log(decodeURI(uri));
 // https:www.baidu.com?x=天气不错
 ```
 
+同时，JavaScript 还提供了 `encodeURIComponent` API, 相对于 `encodeURI`, `encodeURIComponent` 会对字符串中的功能字符（例如， `&`, `?`, `/`, `=` 等）进行转义。
+
+例如：
+
+```javascript
+const utf8 = 'https:www.baidu.com?x=天气不错'
+console.log(encodeURI(utf8););
+// https:www.baidu.com?x=%E5%A4%A9%E6%B0%94%E4%B8%8D%E9%94%99
+console.log(encodeURIComponent(utf8););
+// https%3Awww.baidu.com%3Fx%3D%E5%A4%A9%E6%B0%94%E4%B8%8D%E9%94%99
+
+// 注意 : ? = 这些字符，在 encodeURIComponent 中也被转译。
+```
+
 ## URL
 
 URL, Uniform Resource Locator, 即统一资源**定位符**。

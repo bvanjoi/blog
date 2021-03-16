@@ -42,6 +42,7 @@
 ## 计算机网络
 
 1. [数据传输方式](./src/数据传输方式/README.md)
+2. [C/S 模式与 P2P 模式](./src/CS模式与P2P模式/README.md)
 
 ### HTTP
 
