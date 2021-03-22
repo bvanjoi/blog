@@ -1,6 +1,6 @@
 # React 中的 key
 
-思考一个场景：用 React 写一个页面，实现具有增删功能 TodoList 的列表，。
+思考一个场景：用 React 写一个页面，实现具有增删功能 TodoList 的列表。
 
 从逻辑上讲，这道题非常简单。
 
@@ -37,7 +37,7 @@ const ListShow = (props) => {
 
 ## key 是什么
 
-在 React 中，对于列表的渲染，需要为列表中的每一项赋予**不同**的 `key` 值, 以帮助 React 识别哪些元素被改变。
+在 React 中，对于列表的渲染，需要为*列表中*（而不是全局）的每一项赋予**不同**的 `key` 值, 以帮助 React 识别哪些元素被改变。
 
 ### 如果 `key` 重复了呢？
 
@@ -107,6 +107,8 @@ const ListShow = (props) => {
 
 **但是**，React 官网并不建议用 `index` 作为 key 值，因为每次增加或删除操作，都会导致 `list` 中的 `item` 的索引的变化，例如 `['1','2','3']` 对应的索引为 `[0,1,2]`, 执行 `deleteItem(1)` 后结果就变为 `['1', '3']`, 索引为 `[0,1]`. 这会导致 diff 算法重新遍历一边来进行比较。
 
+另外，将 `index` 作为 key 值也可能会导致渲染问题，可见：<https://jsbin.com/wohima/edit?output>.
+
 ### 该怎么做
 
 其实，很多列表展示的是从数据库拿到的数据，而数据库表的主键 id 是唯一的，因此，建议使用类似于这种的 `id` 作为 `key` 值。
@@ -119,14 +121,14 @@ const ListShow = (props) => {
 
 ![key in select of antd3](https://img-blog.csdnimg.cn/20210320220407463.png)
 
-> antd 中 selector 复用了 rc-select 组件，但在 rc-select 中是设计如此，还是一个 bug, 便不得而知。
+> antd 中 select 复用了 rc-select 组件，但在 rc-select 中是设计如此，还是一个 bug, 便不得而知。
 
 ## 我的观点
 
 综上，我认为，在使用 react 列表中，应该：
 
 1. 任何情况下都**不要**使用重复的 `key` 值。
-2. 如果不需要考虑列表的增加/删除等操作，则可以使用索引 `index`.
-3. 如果需要考虑列表的增加/删除，则可以使用唯一不可变的标识 `id`.
+2. 如果不需要考虑列表的增加/删除等操作，则可以使用索引 `index`, 但并不建议。
+3. 如果需要考虑列表的增加/删除，则使用唯一不可变的标识 `id`.
 
 > 关于重复 key 和以索引为 key 可见示例：<https://codepen.io/bvanjoi/pen/BaQXRJb>

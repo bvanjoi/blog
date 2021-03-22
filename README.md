@@ -164,7 +164,7 @@
 ### TypeScript
 
 1. 元组
-2. interface 与 type 的区别
+2. [TypeScript 中的 interface 和 type](./src/TypeScript中的interface和type/README.md)
 3. typescript 中的面向对象。
 4. implements
 5. Enum 的实现方式，常量枚举，以及
