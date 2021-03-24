@@ -211,13 +211,19 @@ console.log( 0 === Direction.Up)
 1. [[WIP]ssr 优化 seo 入门](./src/ssr优化seo入门/README.md)
 2. prerender 预渲染技术
 
-### React
+## React
 
 1. [[WIP]从搭建一个 React 脚手架开始](./src/从搭建一个React脚手架开始/README.md)
 2. [React 中自定义组件头字母为什么要大写？](./src/React中自定义组件头字母为什么要大写/README.md)
 3. [React 中的 key](./src/React中的key/README.md)
 
-### Hybrid
+### React 类型系统
+
+1. [函数组件中不建议使用React.FC](./src/React类型系统/函数组件中不建议使用React.FC/README.md)
+
+---
+
+## Hybrid
 
 1. [Hybrid 入门](./src/Hybrid入门/README.md)
 
