@@ -165,9 +165,10 @@
 
 1. 元组
 2. [TypeScript 中的 interface 和 type](./src/TypeScript中的interface和type/README.md)
-3. typescript 中的面向对象。
-4. implements
-5. Enum 的实现方式，常量枚举，以及
+3. [用 type 替换 enum](./src/用type替换enum/README.md)
+4. typescript 中的面向对象。
+5. implements
+6. Enum 的实现方式，常量枚举，以及
 
 ```ts
 enum Direction {
