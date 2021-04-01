@@ -63,6 +63,25 @@ const a:A = {
 // It's right
 ```
 
+同时，`interface` 的声明合并可以与 `class` 结合：
+
+```typescript
+interface A {
+  hello: string;
+}
+
+class A {
+  word: string;
+}
+
+const a = new A();
+a.hello = 'hello';
+a.word = 'word';
+
+console.log(a);
+// A { hello: 'hello', word: 'word' }
+```
+
 如果使用 `type`, 则会报错：
 
 ```typescript

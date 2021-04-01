@@ -226,6 +226,7 @@ console.log( 0 === Direction.Up)
 ### React 类型系统
 
 1. [函数组件中不建议使用React.FC](./src/React类型系统/函数组件中不建议使用React.FC/README.md)
+2. [React 与 ReactDOM 中类型](./src/React与ReactDOM中类型/README.md)
 
 ---
 
