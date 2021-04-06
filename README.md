@@ -71,7 +71,9 @@
 
 > 做语言的主人
 
-----
+1. [将 Lisp 函数转化为 C 类函数](./src/将Lisp函数转化为C类函数/README.md)
+
+---
 
 ## Unix
 
@@ -84,7 +86,7 @@
 
 ### Vim
 
-> 问：如何实现一个速记的字符串？
+> 问：如何输出一个随机的字符串？
 >
 > 答：让不会 vim 的人退出 vim.
 
@@ -202,6 +204,7 @@ console.log( 0 === Direction.Up)
 1. npm, npx, nrm, yarn, nvm, ts-node, tsc, yrm 这些名词是什么。
 2. javascript 模块化
 3. `package.json` 中各个 key 值的作用。
+4. [从 npm link 到 lerna](./src/从npm%20link到lerna/README.md)
 
 ### webpack
 
@@ -213,12 +216,12 @@ console.log( 0 === Direction.Up)
 
 ### SEO
 
-1. [[WIP]ssr 优化 seo 入门](./src/ssr优化seo入门/README.md)
+1. [(WIP)ssr 优化 seo 入门](./src/ssr优化seo入门/README.md)
 2. prerender 预渲染技术
 
 ## React
 
-1. [[WIP]从搭建一个 React 脚手架开始](./src/从搭建一个React脚手架开始/README.md)
+1. [(WIP)从搭建一个 React 脚手架开始](./src/从搭建一个React脚手架开始/README.md)
 2. [React 中自定义组件头字母为什么要大写？](./src/React中自定义组件头字母为什么要大写/README.md)
 3. [React 中的 key](./src/React中的key/README.md)
 
