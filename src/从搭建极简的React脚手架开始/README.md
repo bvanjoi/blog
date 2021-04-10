@@ -1,6 +1,4 @@
-# 从搭建一个 React 脚手架开始
-
-> 暂停一下，先学 node 去了。。。
+# 从搭建极简的 React 脚手架开始
 
 ## 什么是脚手架
 
@@ -25,6 +23,16 @@
 
 1. 首先，在环境变量 $PATH 下查询是否存在 `create-react-app`, 若不存在，则返回 `No such file or directory`; 若存在，则执行。该步骤相当于 `which create-react-app`.
 2. 随后，查找该软链接指向的文件，若指向的文件不存在，则返回 `No such file or director`; 若存在，则执行。该步骤相当于执行 `/usr/bin/env node usr/local/lib/node_modules/create-react-app/index.js`.
+3. 执行脚本文件时，首先解析 `my-app --template typescript` 这些输入的参数，按照参数拉取远端的模版文件夹。
+
+### 实现内容
+
+根据上述分析，脚手架至少具有以下两个功能：
+
+1. cli 工具。
+2. 远端模版。
+
+下面，就依据上述目标，来实现一个最简单的脚手架。
 
 ## 从 `yarn link` 开始
 
@@ -40,7 +48,7 @@ mkdir b-create-react && cd b-create-react
 npm init --yes # --yes 是指直接生成默认的 package.json
 ```
 
-随后，在 *package.json* 中指定执行命令的入口文件，添加如下的 `"bin"`字段：
+随后，在 *package.json* 文件中添加如下的 `"bin"` 字段，用以指定执行命令的入口文件：
 
 ```json
 "bin": {
@@ -48,7 +56,7 @@ npm init --yes # --yes 是指直接生成默认的 package.json
 },
 ```
 
-之后，既然设定了入口文件，那么就创建文件与文件夹：
+之后，既然设定了入口文件，那么就创建文件夹与脚本：
 
 ```sh
 mkdir bin && cd bin
@@ -62,17 +70,17 @@ vim index.js && cd ..
 console.log("hello b-create-react");
 ```
 
-此时，执行 `yarn link`, 将该库链接到全局，更多关于 `yarn link` 的内容可以参考：[从 npm link 到 lerna](../从npm%20link到lerna/README.md)。
+此时，执行 `yarn link`, 将该库链接到全局，更多关于 `yarn link` 的内容可以参考：[mono-repo 之从 npm link 到 lerna](../mono-repo之从npm%20link到lerna/README.md)。
 
-随后，我们在本地的任何位置均可以使用指令 `b-create-react`, 其运行效果为输出：`hello b-create-react`.
+随后，我们在**本地**的**任何位置**均可以使用指令 `b-create-react`, 其运行效果为输出：`hello b-create-react`.
 
-在这一部分中，我们创建了一个全局可以调用的命令，接下来，我们将关注如何让该命令接受参数。
+在这一部分中，我们创建了一个全局可以调用的命令，接下来，我们将关注如何让该命令跑起来。
 
-## 用命令行创建一个项目
+## 写一个创建项目的指令
 
-首先明确，当在命令行输入 `b-create-react --version` 返回 `b-create-react/package.json` 中的 `version` 字段。
+首先明确目标，我们希望：当输入 `create-react-app <project-name>` 时，能创建一个名为 `project-name` 的项目。
 
-### 第一个问题：如何接受 `--version` 参数？
+### 第一个问题：如何接受参数？
 
 在 node 中，提供了模块 `process`, 其中 `process.argv` 返回一个数组，其中包含当 Node.js 进程启动时候传入的参数：
 
@@ -84,19 +92,26 @@ const argv = require('process').argv;
 console.log(argv);
 ```
 
-则执行命令 `b-create-react --version`, 其输出为：
+则执行命令 `b-create-react first-app`, 其输出为：
 
 ```javascript
 [
   '/Users/computer/.nvm/versions/node/v14.5.0/bin/node', // node 进程的绝对路径
   '/usr/local/bin/b-create-react', // 正在被执行的 js 文件路径
-  '--version' // 额外参数
+  'first-app' // 额外参数
 ]
 ```
 
-由此可知，我们可以截取 `argv.slice(2)` 来获取所有输入的参数。
+由此可知，可以通过截取 `argv[2]` 来获取用户输入的项目名参数。
 
-### 获取 package.json 中的 `version` 字段
+### 第二个问题：创建模版
+
+现在考虑第二个问题，用户输入项目名后，即希望能够新建一个名为 `argv[2]` 的目录，其中内容为代码模版。
+
+这一问题可以拆解为两个部分：
+
+1. 脚本文件内处理 `argv[2]` 的代码，其中包括创建新目录，在新目录下拉取远端的模版。
+2. 远端模版的设计，对于一个常见的代码而言，主要包括
 
 ## 开始书写脚手架模版
 
@@ -108,15 +123,24 @@ console.log(argv);
 - 语法检查、代码格式化，因此需要 eslint, prettier.
 - git 时的 commit 检查，因此需要 husky.
 
-对此，我们首先提供一个模版：[b-react](https://github.com/bvanjoi/b-react)
+对此，我们首先提供一个模版：[b-react](https://github.com/bvanjoi/b-react), 地址为 <https://github.com/bvanjoi/b-react>.
 
 ## 发布
+
+首先，由于脚手架一般被视为全局命令，因此我们在发布到 `npm` 之前，需要先解除本地调试用的软链接，即总体流程如下：
 
 在项目的根目录下，执行：
 
 ```bash
-npm login # 登入 npm 账号
-npm publish
+yarn unlink  # 解除软链接
+yarn login   # 登入 npm 账号
+yarn publish # 发布
 ```
 
 随后，便被发布到 npm 社区中。
+
+## 不足与展望
+
+对于前端团队使用的脚手架而言，仅具有创建项目单一功能是完全不够的，像诸如 CI/CD, 代码风格约束，包管理等等功能都需要考虑。同时，由于脚手架项目本身的复杂性，诸如 `create-react-app` 这样的仓库使用 lerna 来管理。
+
+因此，`b-create-react` 仅仅是提供了一个示例，告知初学者如何搭建一个

@@ -154,10 +154,12 @@
 12. [分离单双击事件](./src/分离单双击事件/README.md)
 13. [event loop](./src/事件循环/README.md)
 14. [JavaScript 中 Date 类型](./src/JavaScript的Date类型/README.md)
+15. forEach, map 中的异步函数
 
 ### ES6
 
 1. [箭头函数](./src/箭头函数/README.md)
+2. [解构赋值的默认值](./src/解构赋值的默认值/README)
 
 ### node.js
 
@@ -204,7 +206,9 @@ console.log( 0 === Direction.Up)
 1. npm, npx, nrm, yarn, nvm, ts-node, tsc, yrm 这些名词是什么。
 2. javascript 模块化
 3. `package.json` 中各个 key 值的作用。
-4. [从 npm link 到 lerna](./src/从npm%20link到lerna/README.md)
+4. [mono-repo 之从 npm link 到 lerna](./src/mono-repo之从npm%20link到lerna/README.md)
+
+### Lerna
 
 ### webpack
 
@@ -221,14 +225,14 @@ console.log( 0 === Direction.Up)
 
 ## React
 
-1. [(WIP)从搭建一个 React 脚手架开始](./src/从搭建一个React脚手架开始/README.md)
+1. [从搭建极简的 React 脚手架开始](./src/从搭建极简的React脚手架开始/README.md)
 2. [React 中自定义组件头字母为什么要大写？](./src/React中自定义组件头字母为什么要大写/README.md)
 3. [React 中的 key](./src/React中的key/README.md)
 
 ### React 类型系统
 
-1. [函数组件中不建议使用React.FC](./src/React类型系统/函数组件中不建议使用React.FC/README.md)
-2. [React 与 ReactDOM 中类型](./src/React与ReactDOM中类型/README.md)
+1. [函数组件中不建议使用 React.FC](./src/React类型系统/函数组件中不建议使用React.FC/README.md)
+2. [React 与 ReactDOM 中类型](./src/React类型系统/React与ReactDOM中类型/README.md)
 
 ---
 
