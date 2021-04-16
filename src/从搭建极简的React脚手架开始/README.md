@@ -34,7 +34,7 @@
 
 下面，就依据上述目标，来实现一个最简单的脚手架。
 
-## 从 `yarn link` 开始
+## 从 `npm link` 开始
 
 首先，给我们脚手架命名为 `b-create-react`, 随之，创建这个项目：
 
@@ -70,7 +70,7 @@ vim index.js && cd ..
 console.log("hello b-create-react");
 ```
 
-此时，执行 `yarn link`, 将该库链接到全局，更多关于 `yarn link` 的内容可以参考：[mono-repo 之从 npm link 到 lerna](../mono-repo之从npm%20link到lerna/README.md)。
+此时，执行 `npm link`, 将该库链接到全局，更多关于 `npm link` 的内容可以参考：[mono-repo 之从 npm link 到 lerna](../mono-repo之从npm%20link到lerna/README.md)。
 
 随后，我们在**本地**的**任何位置**均可以使用指令 `b-create-react`, 其运行效果为输出：`hello b-create-react`.
 
@@ -132,9 +132,9 @@ console.log(argv);
 在项目的根目录下，执行：
 
 ```bash
-yarn unlink  # 解除软链接
-yarn login   # 登入 npm 账号
-yarn publish # 发布
+npm unlink  # 解除软链接
+npm login   # 登入 npm 账号
+npm publish # 发布
 ```
 
 随后，便被发布到 npm 社区中。

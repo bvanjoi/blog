@@ -159,7 +159,8 @@
 ### ES6
 
 1. [箭头函数](./src/箭头函数/README.md)
-2. [解构赋值的默认值](./src/解构赋值的默认值/README)
+2. [(WIP)解构赋值的默认值](./src/解构赋值的默认值/README)
+3. [模版字符串](./src/模版字符串/README.md)
 
 ### node.js
 
@@ -209,6 +210,8 @@ console.log( 0 === Direction.Up)
 4. [mono-repo 之从 npm link 到 lerna](./src/mono-repo之从npm%20link到lerna/README.md)
 
 ### Lerna
+
+1.
 
 ### webpack
 
