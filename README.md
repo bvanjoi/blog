@@ -21,6 +21,7 @@
 1. [数据劫持](./src/数据劫持/README.md)
 2. [查询与中断](./src/查询与中断/README.md)
 3. [观察者模式](./src/观察者模式/README.md)
+4. [构造者模式](./src/构造者模式/README.md)
 
 ---
 
