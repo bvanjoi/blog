@@ -190,7 +190,7 @@ console.log( 0 === Direction.Up)
 
 ### BOM: Browser Object Model
 
-1. performance  and PerformanceObserver in window;
+1. [页面性能监控](./src/页面性能监控/README.md)
 
 ### DOM: Document Object Model
 
