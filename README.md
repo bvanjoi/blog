@@ -207,8 +207,11 @@ console.log( 0 === Direction.Up)
 
 1. npm, npx, nrm, yarn, nvm, ts-node, tsc, yrm 这些名词是什么。
 2. javascript 模块化
-3. `package.json` 中各个 key 值的作用。
-4. [mono-repo 之从 npm link 到 lerna](./src/mono-repo之从npm%20link到lerna/README.md)
+3. [mono-repo 之从 npm link 到 lerna](./src/mono-repo之从npm%20link到lerna/README.md)
+
+### 包管理工具
+
+1. [package.json 常见字段](./src/package.json常见字段/README.md)
 
 ### Lerna
 
