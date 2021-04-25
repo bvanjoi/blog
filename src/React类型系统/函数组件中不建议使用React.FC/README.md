@@ -131,4 +131,4 @@ const App = (): JSX.Element => <A />;
 
 ## 参考
 
-1. [create-react-app 的 ts 模版中移除 React.FC 的 PR](https://github.com/facebook/create-react-app/pull/8177)
+1. [create-react-app 的 ts 模板中移除 React.FC 的 PR](https://github.com/facebook/create-react-app/pull/8177)

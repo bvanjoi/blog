@@ -11,7 +11,7 @@
 
 ### 脚手架执行流程
 
-以 `create-react-app` 为例，我们可以在终端中输入 `create-react-app my-app --template typescript` 创建一个以 Typescript 作为模版的初始项目。
+以 `create-react-app` 为例，我们可以在终端中输入 `create-react-app my-app --template typescript` 创建一个以 Typescript 作为模板的初始项目。
 
 其指令含义如下：
 
@@ -23,14 +23,14 @@
 
 1. 首先，在环境变量 $PATH 下查询是否存在 `create-react-app`, 若不存在，则返回 `No such file or directory`; 若存在，则执行。该步骤相当于 `which create-react-app`.
 2. 随后，查找该软链接指向的文件，若指向的文件不存在，则返回 `No such file or director`; 若存在，则执行。该步骤相当于执行 `/usr/bin/env node usr/local/lib/node_modules/create-react-app/index.js`.
-3. 执行脚本文件时，首先解析 `my-app --template typescript` 这些输入的参数，按照参数拉取远端的模版文件夹。
+3. 执行脚本文件时，首先解析 `my-app --template typescript` 这些输入的参数，按照参数拉取远端的模板文件夹。
 
 ### 实现内容
 
 根据上述分析，脚手架至少具有以下两个功能：
 
 1. cli 工具。
-2. 远端模版。
+2. 远端模板。
 
 下面，就依据上述目标，来实现一个最简单的脚手架。
 
@@ -104,16 +104,16 @@ console.log(argv);
 
 由此可知，可以通过截取 `argv[2]` 来获取用户输入的项目名参数。
 
-### 第二个问题：创建模版
+### 第二个问题：创建模板
 
-现在考虑第二个问题，用户输入项目名后，即希望能够新建一个名为 `argv[2]` 的目录，其中内容为代码模版。
+现在考虑第二个问题，用户输入项目名后，即希望能够新建一个名为 `argv[2]` 的目录，其中内容为代码模板。
 
 这一问题可以拆解为两个部分：
 
-1. 脚本文件内处理 `argv[2]` 的代码，其中包括创建新目录，在新目录下拉取远端的模版。
-2. 远端模版的设计，对于一个常见的代码而言，主要包括
+1. 脚本文件内处理 `argv[2]` 的代码，其中包括创建新目录，在新目录下拉取远端的模板。
+2. 远端模板的设计，对于一个常见的代码而言，主要包括
 
-## 开始书写脚手架模版
+## 开始书写脚手架模板
 
 那么，既然要开发一个脚手架，首先思考这个脚手架能提供什么：
 
@@ -123,7 +123,7 @@ console.log(argv);
 - 语法检查、代码格式化，因此需要 eslint, prettier.
 - git 时的 commit 检查，因此需要 husky.
 
-对此，我们首先提供一个模版：[b-react](https://github.com/bvanjoi/b-react), 地址为 <https://github.com/bvanjoi/b-react>.
+对此，我们首先提供一个模板：[b-react](https://github.com/bvanjoi/b-react), 地址为 <https://github.com/bvanjoi/b-react>.
 
 ## 发布
 

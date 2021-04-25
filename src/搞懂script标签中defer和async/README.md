@@ -26,7 +26,7 @@ console.log('b1 in index2.js',b1); // 创建 index1.js 和 index2.js 的依赖�
 
 ### 同步加载时候
 
-剩下一个 HTML 模版，首先展示的是同步加载时的情况：
+剩下一个 HTML 模板，首先展示的是同步加载时的情况：
 
 - `index.html`:
 

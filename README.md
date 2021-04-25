@@ -161,7 +161,7 @@
 
 1. [箭头函数](./src/箭头函数/README.md)
 2. [(WIP)解构赋值的默认值](./src/解构赋值的默认值/README)
-3. [模版字符串](./src/模版字符串/README.md)
+3. [模板字符串](./src/模板字符串/README.md)
 
 ### node.js
 
@@ -235,6 +235,7 @@ console.log( 0 === Direction.Up)
 1. [从搭建极简的 React 脚手架开始](./src/从搭建极简的React脚手架开始/README.md)
 2. [React 中自定义组件头字母为什么要大写？](./src/React中自定义组件头字母为什么要大写/README.md)
 3. [React 中的 key](./src/React中的key/README.md)
+4. [(WIP)styled-components 的实现原理](./src/styled-components的实现原理/README.md)
 
 ### React 类型系统
 
