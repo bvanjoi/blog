@@ -138,6 +138,7 @@
 1. outline 与 border 的区别
 2. 没有 outline-radius 的 outline 如何实现圆角
 3. [white-space 在文本编辑器中的使用](./src/white-space在文本编辑器中的使用/README.md)
+4. [Chrome 中由合字引发的渲染问题](./src/Chrome中由合字引发的渲染问题/README.md)
 
 ## JavaScript
 
