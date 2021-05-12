@@ -206,8 +206,8 @@ console.log( 0 === Direction.Up)
 
 ## 前端工程化
 
-1. npm, npx, nrm, yarn, nvm, ts-node, tsc, yrm 这些名词是什么。
-2. [javascript 模块化](./src/javascript模块化/README.md)
+1. npm, npx, nrm, yarn, nvm, ts-node, tsc, yrm 这些工具是什么。
+2. [JavaScript 模块化发展](./src/JavaScript模块化发展/README.md)
 3. [mono-repo 之从 npm link 到 lerna](./src/mono-repo之从npm%20link到lerna/README.md)
 
 ### 包管理工具
