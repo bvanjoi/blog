@@ -101,6 +101,14 @@ npm 中 `package.json` 文件用来声明该目录为一个包。
 
 - `peerDependencies`: 简单而言，该字段用于防止多次引入相同的库。
 
+例如，某个项目存在依赖 A, 而 A 项目中的 `peerDependencies` 包含字段 B, 则 `npm install` 之后的目录结构为：
+
+```txt
+|-node_modules
+|---A
+|---B
+```
+
 ### `peerDependenciesMeta`
 
 - `peerDependenciesMeta`: 作为 `peerDependencies` 的辅助字段，可以告知包管理工具更多信息。
