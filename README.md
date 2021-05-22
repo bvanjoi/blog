@@ -73,6 +73,7 @@
 > 做语言的主人
 
 1. [将 Lisp 函数转化为 C 类函数](./src/将Lisp函数转化为C类函数/README.md)
+2. [借助 Acorn 实现 JavaScript 自定义语法](./src/借助Acorn实现JavaScript自定义语法/README.md)
 
 ---
 
