@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- <meta charset="gb2312"> -->
+  <!-- <title>wrong encode/decode</title> -->
+  <!-- ---------- -->
+  <meta charset="UTF-8">
+  <title>right encode/decode</title>
+</head>
+<body>
+  <script>
+    const char = encodeURIComponent("中文")
+    document.write(char)
+    document.write('<p></p>')
+    document.write(decodeURIComponent(char))
+  </script>
+</body>
+</html>
