@@ -10,7 +10,7 @@
 - Output: 打包产物配置，告知 webpack 生成打包产物的目录、打包产物文件名等；
 - Loaders: 默认情况下，webpack 只能处理 JavaScript 和 JSON 文件，通过配置 Loaders, 可以使得 webpack 处理其他类型（诸如 css, txt）等格式的文件；
 - Plugins: Loaders 为 webpack 增加了处理其他文件的能力，而 Plugins 提供的能力更为广泛，例如打包产物优化、资源管理、注入环境变量等；
-- Mode: webpack 提供 `none`, `development`, `production` 三种打包模式，不同选项可以启动不同的功能。默认情况下为 `production`. 除了 `none` 模式外，其余二者都会带有一系列内置函数。
+- Mode: webpack 提供 `none`, `development`, `production` 三种打包模式，不同选项可以启动不同的优化效果。默认情况下为 UglifyJsPlugin`production`. 除了 `none` 模式外，其余二者都会带有一系列内置 plugin.
 - Browser Compatibility： webpack 兼容所有实现 ES5 的浏览器，对于更古老的浏览器，需要引入 polyfill.
 
 ## 打包初体验

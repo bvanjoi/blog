@@ -50,7 +50,7 @@ devServer: {
   contentBase: '.',
   // 告知 webpack-dev-server 打包产物的路径
   // 优先级高于 contentBase
-  // 此处为域名下的绝对路径
+  // 为了演示，仅使用相对路径，实际项目中，应该使用域名下的绝对路径
   publicPath: '/dist',
 }
 ```
