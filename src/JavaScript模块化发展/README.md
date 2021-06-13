@@ -103,7 +103,7 @@
 
   但是，命名空间也存在极大的问题：由于 JavaScript 中对象属于引用类型，导致即使用 `const` 声明，值也会被修改，即诸如 `module1.pos = 'test'` 是可以正常运行的。
 
-## IIFE: 使用闭包来实现变量私有化
+## IIFE:使用闭包来实现变量私有化
 
 既然在**全局作用域**下变量可被修改，那么可以将其写入到**函数作用域**下，随后通过闭包来实现变量的不被销毁，则可以解决上述问题：
 
@@ -197,6 +197,18 @@ export default function getPos() {
 // index.js 引入
 import getPos, {pos} from './lib';
 ```
+
+### ES6 Module 静态特性
+
+诸如
+
+```js
+import xxx from 'yyyy'
+```
+
+这种引入方式是静态的，在 JS 代码预编译阶段，会生成一个**只读的引用**。
+
+### 动态 import()
 
 ### Node 中使用 ES6 Module
 

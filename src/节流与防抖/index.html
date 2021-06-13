@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>debounce and throttle</title>
+</head>
+<body>
+	<div>
+		<p>you can click these button and look result at devtool.</p>
+		<div>
+			<button class="debounce">debounce</button>
+		</div>
+		<div>
+			<button class="throttle">throttle</button>
+		</div>
+	</div>
+	<script>
+		function debounce(fn, time) {
+			let timeout;
+			return function() {
+				if (timeout) {
+					clearTimeout(timeout);
+				}
+				timeout = setTimeout(() => {
+					fn();
+				}, time);
+			}
+		}
+
+		function throttle(fn, time) {
+			let prev = 0;
+			return function() {
+				const now = Date.now();
+				if (Date.now() - prev > time) {
+					fn();
+					prev = now;
+				}
+			}
+		}
+
+		const time = 1000;
+
+		const debounceClick = debounce(() => {
+			console.log('this is debounce')
+		}, time)
+		document.querySelector('.debounce').addEventListener('click', debounceClick);
+
+		const throttleClick = throttle(() => {
+			console.log('this is throttle');
+		}, time)
+		document.querySelector('.throttle').addEventListener('click', throttleClick);
+
+	</script>
+</body>
+</html>

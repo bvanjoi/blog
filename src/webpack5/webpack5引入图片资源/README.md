@@ -24,7 +24,7 @@
 
 随后，目录结构为：
 
-```
+```txt
 /
 -- cat.jpg
 -- index.html

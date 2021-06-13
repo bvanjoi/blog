@@ -12,8 +12,6 @@
 
 1. [GitLab-CI/CD](./src/CICD/README.md)
 
-### Git
-
 ---
 
 ## 设计模式
@@ -22,6 +20,8 @@
 2. [查询与中断](./src/查询与中断/README.md)
 3. [观察者模式](./src/观察者模式/README.md)
 4. [构造者模式](./src/构造者模式/README.md)
+5. [单例模式](./src/单例模式/README.md)
+6. [策略模式](./src/策略模式/README.md)
 
 ---
 
@@ -58,14 +58,16 @@
 ## 计算机网络
 
 1. [数据传输方式](./src/数据传输方式/README.md)
-2. [TDM, CDM, WDM, WDM, STDM]
+2. [C/S 模式与 P2P 模式](./src/CS模式与P2P模式/README.md)
 3. [分组转发中的时延]
-4. [C/S 模式与 P2P 模式](./src/CS模式与P2P模式/README.md)
+4. [TDM, CDM, WDM, WDM, STDM]
 
 ### HTTP
 
 1. [URI, URL, URN](./src/URI与URL与URN/README.md)
 2. [URL 编码](./src/URL编码/README.md)
+3. [HTTP 状态码](./src/HTTP状态码/README.md)
+4. [所谓 GET 与 POST](./src/所谓GET与POST/README.md)
 
 ---
 
@@ -135,33 +137,39 @@
 
 1. [HTML 中异步加载 JS 文件](./src/HTML中异步加载JS文件/README.md)
 2. [搞懂 script 标签中 defer 和 async](./src/搞懂script标签中defer和async/README.md)
+3. [HTML 全局属性](./src/HTML全局属性/README.md)
+4. [详解各类 meta 标签](./src/详解各类meta标签/README.md)
+5. [style 标签一定要写在 body 前面吗](./src/style标签一定要写在body前面吗/README.md)
 
 ## CSS
 
 1. [CSS 中长度与 px 转 rem](./src/CSS中长度单位与px转rem/README.md)
-2. outline 与 border 的区别
-3. 没有 outline-radius 的 outline 如何实现圆角
-4. [white-space 在文本编辑器中的使用](./src/white-space在文本编辑器中的使用/README.md)
-5. [Chrome 中由合字引发的渲染问题](./src/Chrome中由合字引发的渲染问题/README.md)
+2. [Chrome 中由合字引发的渲染问题](./src/Chrome中由合字引发的渲染问题/README.md)
+3. [white-space 在文本编辑器中的使用](./src/white-space在文本编辑器中的使用/README.md)
+4. [BFC](./src/BFC/README.md)
+5. [用 CSS 画三角形](./src/用CSS画三角形/README.md)
+6. [outline 与 border 的区别](./src/outline与border的区别/README.md)
+7. 没有 outline-radius 的 outline 如何实现圆角
 
 ## JavaScript
 
 1. [JavaScript 中的继承](./src/JavaScript中的继承/README.md)
 2. [JavaScript 中覆盖继承的对象](./src/JavaScript中覆盖继承的对象/README.md)
-3. Array.prototype.flat() 为什么只能 flat 一层？
+3. forEach, map 中的异步函数
 4. 用 setTimeout 实现动画，以及 setTimeout 的原理。
 5. 类数组与数组以及类数组在 typescript 中的类型。
 6. 为什么说“函数是一等公民”
 7. number 和 Number 的区别
-8. 为什么 0.1 + 0.2 === 0.3 返回 false.
+8. [为什么 0.1 + 0.2 === 0.3 返回 false](https://bvanjoi.github.io/IEEE-754-visiable/)
 9. 装饰器
 10. [JavaScript 中的 this](./src/JavaScript中的this/README.md)
 11. [JavaScript 中 call, apply, bind 的原理与实现](./src/JS中call,apply,bind的原理与实现/README.md)
 12. 闭包
 13. [分离单双击事件](./src/分离单双击事件/README.md)
-14. [event loop](./src/事件循环/README.md)
+14. [EventLoop](./src/事件循环/README.md)
 15. [JavaScript 中 Date 类型](./src/JavaScript的Date类型/README.md)
-16. forEach, map 中的异步函数
+16. [JavaScript 中的深浅拷贝](./src/JavaScript中的深浅拷贝/README.md)
+17. [节流与防抖](./src/节流与防抖/README.md)
 
 ### ES6
 
@@ -197,6 +205,7 @@ console.log( 0 === Direction.Up)
 ### BOM: Browser Object Model
 
 1. [页面性能监控](./src/页面性能监控/README.md)
+2. [页面存储方式](./src/页面存储方式/README.md)
 
 ### DOM: Document Object Model
 
@@ -233,7 +242,15 @@ console.log( 0 === Direction.Up)
 4. [webpack 中的文件指纹](./src/webpack5/webpack中文件指纹/README.md)
 5. [publicPath/contentBase 的关系](./src/webpack5/publicPath与contentBase的关系/README.md)
 6. [webpack5 引入图片资源](./src/webpack5/webpack5引入图片资源/README.md)
-7. [(WIP)写一个 webpack 插件](./src/写一个webpack插件/README.md)
+7. [不同 sourceMap 的不同效果](./src/webpack5/不同sourceMap的不同效果/README.md)
+8. [tree shaking 优化代码](./src/webpack5/tree-shaking优化代码/README.md)
+9. [代码分割](./src/webpack5/代码分割/README.md)
+10. [webpack 模块机制](./src/webpack5/webpack模块机制/README.md)
+11. [使用模块联邦实现微前端](./src/webpack5/使用模块联邦实现微前端/README.md)
+12. [loader 运行机制](./src/webpack5/loader运行机制/README.md)
+13. tapable
+14. [myWebpack](./src/webpack5/myWebpack/README.md)
+15. [(WIP)写一个 webpack 插件](./src/写一个webpack插件/README.md)
 
 ### SSR
 

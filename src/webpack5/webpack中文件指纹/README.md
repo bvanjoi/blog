@@ -6,11 +6,11 @@
 
 从作用上来讲，文件指纹可用于版本管理，缓存文件。
 
-## 常见的 hash
+## 常见的 hash 的概念
 
-- `hash`;
-- `chunkhash`;
-- `contenthash`.
+- `hash`: 每次 webpack 构建，都会生成唯一的 hash 值。
+- `chunkhash`: chunk 是指，从一个入口文件开始打包生成的产物。
+- `contenthash`: 依据文件内容生成的 hash 值。
 
 ### hash
 

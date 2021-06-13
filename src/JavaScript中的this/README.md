@@ -112,7 +112,7 @@ console.log(new person3()) // {name: 'tom'}, 表明返回目标对象的实例 t
 
 ## 箭头函数中的 `this`
 
-ES6 中的箭头函数有一个关键的特性：它的 `this` 是静态的，例如，在 指向上下文的 this 中，如果将 p.brother.consoleThis2 更改为箭头函数，会将其指向外层：
+ES6 中的箭头函数有一个关键的特性：它的 `this` 是静态的（在定义函数时就已经绑定），例如，在 指向上下文的 this 中，如果将 p.brother.consoleThis2 更改为箭头函数，会将其指向外层：
 
 ```js
 const a = () => {

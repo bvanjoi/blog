@@ -6,7 +6,10 @@
 
 首先，需要了解一些基本概念：
 
-- Entry: 入口配置，表明 webpack 以哪个文件开始打包；在 webpack 配置文件中，`entry` 字段即可以是一个字符串（单入口），也可以是一个对象（多入口 or 单入口 or 对象语法来实现完整配置），也可以是一个数组（将两个文件打包在一起）。
+- Entry: 入口配置，表明 webpack 以哪个文件开始打包；在 webpack 配置文件中，`entry` 字段即可以是一个字符串，也可以是一个对象，也可以是一个数组。
+  - string: 单入口，以 entry 为入口打包。此处 chunk 默认为 `main`.
+  - array: 多入口，强制处理某些不相关的文件。此时，所有文件只会生成一个 chunk( 以第一个元素为 ) 和 一个 bundle.
+  - object: 多入口/单入口，entry 字段的最完整的配置。
 - Output: 打包产物配置，告知 webpack 生成打包产物的目录、打包产物文件名等；
 - Loaders: 默认情况下，webpack 只能处理 JavaScript 和 JSON 文件，通过配置 Loaders, 可以使得 webpack 处理其他类型（诸如 css, txt）等格式的文件；
 - Plugins: Loaders 为 webpack 增加了处理其他文件的能力，而 Plugins 提供的能力更为广泛，例如打包产物优化、资源管理、注入环境变量等；
