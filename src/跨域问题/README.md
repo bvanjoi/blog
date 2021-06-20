@@ -59,3 +59,6 @@ getHello(): string {
 ## 代理服务器
 
 当有跨域请求时，可以先将请求发送给代理上，再让代理转发给服务器。例如 charles, webpack-dev-server 等。
+
+- 正向代理；
+- 反向代理；

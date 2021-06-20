@@ -1,4 +1,4 @@
-# TODO
+# Blog
 
 > 承认痛苦的无用性。
 
@@ -68,6 +68,7 @@
 2. [URL 编码](./src/URL编码/README.md)
 3. [HTTP 状态码](./src/HTTP状态码/README.md)
 4. [所谓 GET 与 POST](./src/所谓GET与POST/README.md)
+5. [图片防盗链](./src/图片防盗链/README.md)
 
 ---
 
@@ -149,7 +150,8 @@
 4. [BFC](./src/BFC/README.md)
 5. [用 CSS 画三角形](./src/用CSS画三角形/README.md)
 6. [outline 与 border 的区别](./src/outline与border的区别/README.md)
-7. 没有 outline-radius 的 outline 如何实现圆角
+7. [移动端上 0.5px 的线](./src/移动端上0.5px的线/README.md)
+8. 没有 outline-radius 的 outline 如何实现圆角
 
 ## JavaScript
 
@@ -172,6 +174,7 @@
 17. [节流与防抖](./src/节流与防抖/README.md)
 18. [从示例来看 Ajax](./src/从示例来看Ajax/README.md)
 19. [Fetch vs Ajax](./src/fetch_vs_ajax/README.md)
+20. [浏览器中的已拦截弹窗](./src/浏览器中的已拦截弹窗/README.md)
 
 ### ES6
 
@@ -193,21 +196,23 @@
 5. implements
 6. Enum 的实现方式，常量枚举，以及
 
-```ts
-enum Direction {
-  Up,
-  Down
-}
+    ```ts
+    enum Direction {
+      Up,
+      Down
+    }
 
-console.log( 0 === Direction.Up)
-```
+    console.log( 0 === Direction.Up)
+    ```
 
-1. 范型
+7. 范型
 
 ### BOM: Browser Object Model
 
 1. [页面性能监控](./src/页面性能监控/README.md)
 2. [页面存储方式](./src/页面存储方式/README.md)
+3. [获取图片原始宽高](./src/获取图片原始宽高/README.md)
+4. [图片格式一览](./src/图片格式一览/README.md)
 
 ### DOM: Document Object Model
 
@@ -217,12 +222,20 @@ console.log( 0 === Direction.Up)
 4. HTML-DOM 和 DOM Core, CSS-DOM
 5. is innerHTML asynchronous? [reference](https://stackoverflow.com/questions/42986295/is-innerhtml-asynchronous)
 6. [常见 MouseEvent 事件总结](./src/常见MouseEvent事件总结/README.md)
+7. [事件委托机制](./src/事件委托机制/README.md)
 
 ---
 
 ## Web 安全
 
 1. [跨域问题](./src/跨域问题/README.md)
+2. [文件上传漏洞](./src/文件上传漏洞/README.md)
+
+---
+
+## ProseMirror
+
+1. [指南翻译](./src/ProseMirror/指南翻译/README.md)
 
 ---
 
@@ -256,9 +269,9 @@ console.log( 0 === Direction.Up)
 10. [webpack 模块机制](./src/webpack5/webpack模块机制/README.md)
 11. [使用模块联邦实现微前端](./src/webpack5/使用模块联邦实现微前端/README.md)
 12. [loader 运行机制](./src/webpack5/loader运行机制/README.md)
-13. tapable
-14. [myWebpack](./src/webpack5/myWebpack/README.md)
-15. [(WIP)写一个 webpack 插件](./src/写一个webpack插件/README.md)
+13. [myWebpack](./src/webpack5/myWebpack/README.md)
+14. [(WIP)写一个 webpack 插件](./src/写一个webpack插件/README.md)
+15. tapable
 
 ### SSR
 
@@ -274,7 +287,8 @@ console.log( 0 === Direction.Up)
 1. [从搭建极简的 React 脚手架开始](./src/从搭建极简的React脚手架开始/README.md)
 2. [React 中自定义组件头字母为什么要大写？](./src/React中自定义组件头字母为什么要大写/README.md)
 3. [React 中的 key](./src/React中的key/README.md)
-4. [(WIP)styled-components 的实现原理](./src/styled-components的实现原理/README.md)
+4. [class 组件中为什么设计成需要 bind](./src/class组件中为什么设计成需要bind/README.md)
+5. [(WIP)styled-components 的实现原理](./src/styled-components的实现原理/README.md)
 
 ### React 类型系统
 

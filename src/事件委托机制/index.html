@@ -1,0 +1,42 @@
+<head>
+	<title>Event Delegation</title>
+ </head>
+ 	<style>
+		 div {
+			 border: 1px solid black;
+		 }
+	 </style>
+ <body>
+	 <ul>
+		<li><button>btn1</button></li>
+		<li><button>btn2</button></li>
+		<li><button>btn3</button></li>
+	 </ul>
+
+	 <div class="b1">
+		 div1
+		 <div class="b2">
+			 div2
+			 <div class="b3">
+				 div3
+			 </div>
+		 </div>
+	 </div>
+	<script>
+	 document.querySelector("ul").onclick = function() {
+		console.log('click button')
+	 }
+
+	 function click () {
+		 console.log(this)
+	 }
+	 // 第三个参数为 true 时表示启用 捕获，默认为 false
+	//  document.querySelector('.b1').addEventListener('click', click, true)
+	//  document.querySelector('.b2').addEventListener('click', click, true)
+	//  document.querySelector('.b3').addEventListener('click', click, true)
+
+	 document.querySelector('.b1').addEventListener('click', click)
+	 document.querySelector('.b2').addEventListener('click', click)
+	 document.querySelector('.b3').addEventListener('click', click)
+	</script>
+ </body>
