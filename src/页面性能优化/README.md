@@ -30,6 +30,7 @@
     - MiniCssExtractPlugin: 抽取样式文件
     - 压缩样式文件: webpack5 中的 css 压缩 CSSMinimizerWebpackPlugin, webpack4 中的 optimize-css-assets-webpack-plugin
   - contenthash 实现缓存
+  - webpack.optimize.ModuleConcatenationPlugin 实现 scope hosting, production 下已经默认开启。同时，由于 scope hosting 依赖了 ES6 Module 静态的特性，因此在使用一些库时，也尽可能使用 esm.
 - 代码分割，保证每个打包产物足够小，通过多入口或者动态引入实现。
 - 按需加载，例如动态引入 polyfill, 懒加载，webpackPrefetch 实现预加载等。
 - 资源

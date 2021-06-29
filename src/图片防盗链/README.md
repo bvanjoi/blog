@@ -23,3 +23,5 @@
 最后，贴上这张微信内图片的连接：
 
 ![微信内图片](https://mmbiz.qpic.cn/mmbiz_jpg/k8mfzmDiciawE83yFHcYbHEdUjB5K0JP7iasNYmzTGhgGAzYCU6HuHbEss7sf9VOWGfDs5bKgGunTCjMtnuR1mhhg/640)
+
+> 神奇的是微信既让没有屏蔽 github..

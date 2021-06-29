@@ -177,7 +177,11 @@ console.log(getPos())
 // in lib
 ```
 
-## ES6 Module
+#### CommonJS 的动态性
+
+CommonJS 的引入方式属于动态引入，是执行时引入。
+
+### ES6 Module
 
 ES6 Module 很大程度上决定了 JavaScript 模块化的走向，相比于 CommonJS 等社区规范，ES6 Module 得到了浏览器原生的支持，因此也具有更优秀的性能。
 
@@ -198,7 +202,7 @@ export default function getPos() {
 import getPos, {pos} from './lib';
 ```
 
-### ES6 Module 静态特性
+#### ES6 Module 静态特性
 
 诸如
 
@@ -208,7 +212,11 @@ import xxx from 'yyyy'
 
 这种引入方式是静态的，在 JS 代码预编译阶段，会生成一个**只读的引用**。
 
-### 动态 import()
+同时，得益于其静态特性，使得 Tree-Shaking 等优化可以实现。
+
+另外，这导致了必须在顶层中使用 `import xxx from 'uuuu'`
+
+### 动态 `import()`
 
 ### Node 中使用 ES6 Module
 

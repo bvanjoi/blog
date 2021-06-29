@@ -69,6 +69,7 @@
 3. [HTTP 状态码](./src/HTTP状态码/README.md)
 4. [所谓 GET 与 POST](./src/所谓GET与POST/README.md)
 5. [图片防盗链](./src/图片防盗链/README.md)
+6. [多路复用能否取代打包工具]
 
 ---
 
@@ -90,6 +91,8 @@
 1. [虚拟化中的三种网络模式](./src/虚拟化中的三种网络模式/README.md)
 2. [Linux 常见指令](./src/Linux/Linux常见指令.md)
 3. [Linux 目录结构](./src/Linux/Linux目录结构.md)
+
+### Nginx
 
 ### Vim
 
@@ -175,6 +178,8 @@
 18. [从示例来看 Ajax](./src/从示例来看Ajax/README.md)
 19. [Fetch vs Ajax](./src/fetch_vs_ajax/README.md)
 20. [浏览器中的已拦截弹窗](./src/浏览器中的已拦截弹窗/README.md)
+21. [JavaScript 中函数中对象传参](./src/JavaScript中函数中对象传参/README.md)
+22. tippy.js 中是如何将 rectClient 转变为 transition 的？
 
 ### ES6
 
@@ -223,6 +228,7 @@
 5. is innerHTML asynchronous? [reference](https://stackoverflow.com/questions/42986295/is-innerhtml-asynchronous)
 6. [常见 MouseEvent 事件总结](./src/常见MouseEvent事件总结/README.md)
 7. [事件委托机制](./src/事件委托机制/README.md)
+8. shadow DOM
 
 ---
 
@@ -254,6 +260,7 @@
 
 1. [Babel 入门](./src/Babel入门/README.md)
 2. [写一个极简的 Babel 插件](./src/写一个极简的Babel插件/README.md)
+3. [已被废弃的 babel-polyfill](./src/已被废弃的babel-polyfill/README.md)
 
 ### webpack5
 
