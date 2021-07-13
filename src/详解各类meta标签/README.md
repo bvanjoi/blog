@@ -49,3 +49,11 @@ window.innerWidth
 |minimum-scale| [0.0 - 10.0]|缩放值最小比例|
 |maximum-scale| [0.0 - 10.0]|缩放值最大比例|
 |user-scale| 'yes' or 'no' |是否永续用户手动缩放页面|
+
+## format-detection
+
+`format-detection` 可以检测 HTML 中的一些格式，比如手机号：
+
+```html
+<meta name="format-detection" content="telephone=yes">
+```

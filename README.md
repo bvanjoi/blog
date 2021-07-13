@@ -50,8 +50,7 @@
 
 1. [关于斐波那契数列，我知道的都在这里了](./src/斐波那契数列/README.md)
 2. [判断素数的一些方法](./src/判断素数方法/README.md)
-3. 蔡勒公式
-4. 汉诺塔
+3. 汉诺塔
 
 ---
 
@@ -69,7 +68,8 @@
 3. [HTTP 状态码](./src/HTTP状态码/README.md)
 4. [所谓 GET 与 POST](./src/所谓GET与POST/README.md)
 5. [图片防盗链](./src/图片防盗链/README.md)
-6. [多路复用能否取代打包工具]
+6. [短链技术](./src/短链技术/README.md)
+7. 多路复用与打包工具
 
 ---
 
@@ -179,7 +179,8 @@
 19. [Fetch vs Ajax](./src/fetch_vs_ajax/README.md)
 20. [浏览器中的已拦截弹窗](./src/浏览器中的已拦截弹窗/README.md)
 21. [JavaScript 中函数中对象传参](./src/JavaScript中函数中对象传参/README.md)
-22. tippy.js 中是如何将 rectClient 转变为 transition 的？
+22. [`string` vs `new String()`](./src/string_vs_new_string()/README.md)
+23. tippy.js 中是如何将 rectClient 转变为 transition 的？
 
 ### ES6
 

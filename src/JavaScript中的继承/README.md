@@ -75,7 +75,7 @@ Animal.prototype.getSpecie = function() {
 }
 ```
 
-随后，创建一个类 `Cat`, 通过 `prototype` 将其原型对象指向 Animal 的实例。
+随后，创建一个类 `Cat`, 通过 `prototype` 将其原型对象指向 Animal 的**实例**。
 
 ```javascript
 function Cat() {}
