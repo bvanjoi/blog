@@ -27,6 +27,8 @@ JavaScript 中提供了两种类型：
 - 引用类型：`typeof` 不起作用，因为所有从 `Object` 派生处的结构类的类型均为 `Object`, 例如：
   - `typeof (new Set())` 的结果为 `object`
 
+> 还有 function 类型也可以使用 `typeof` 来查看。
+
 ## 回到字符串
 
 ```js
@@ -49,4 +51,3 @@ let s3 = new String('789'); // s3 为引用类型：字符串对象，类型为 
 不同于 `'123'` vs `new String('456')`, 左侧两者生成的是 string 类型和 object 类型；
 
 而 `[]` 和 `new Array()` 生成的类型均为 object.
-

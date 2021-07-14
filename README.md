@@ -6,6 +6,8 @@
 
 ### DevOps
 
+> 只要你做的足够糟，DevOps 就能极大地降低部署效率。
+
 1. [DevOps 流程](./src/DevOps/README.md)
 
 ### CI/CD
@@ -68,8 +70,10 @@
 3. [HTTP 状态码](./src/HTTP状态码/README.md)
 4. [所谓 GET 与 POST](./src/所谓GET与POST/README.md)
 5. [图片防盗链](./src/图片防盗链/README.md)
-6. [短链技术](./src/短链技术/README.md)
-7. 多路复用与打包工具
+6. [HTTP headers](./src/http_header/README.md)
+7. [HTTP 缓存](./src/HTTP缓存/README.md)
+8. [短链技术](./src/短链技术/README.md)
+9. 多路复用与打包工具
 
 ---
 
@@ -144,32 +148,38 @@
 3. [HTML 全局属性](./src/HTML全局属性/README.md)
 4. [详解各类 meta 标签](./src/详解各类meta标签/README.md)
 5. [style 标签一定要写在 body 前面吗](./src/style标签一定要写在body前面吗/README.md)
+6. [HTML 语义化](./src/HTML语义化/README.md)
 
 ## CSS
 
-1. [CSS 中长度与 px 转 rem](./src/CSS中长度单位与px转rem/README.md)
+1. [css 中长度与 px 转 rem](./src/CSS中长度单位与px转rem/README.md)
 2. [Chrome 中由合字引发的渲染问题](./src/Chrome中由合字引发的渲染问题/README.md)
 3. [white-space 在文本编辑器中的使用](./src/white-space在文本编辑器中的使用/README.md)
 4. [BFC](./src/BFC/README.md)
 5. [用 CSS 画三角形](./src/用CSS画三角形/README.md)
 6. [outline 与 border 的区别](./src/outline与border的区别/README.md)
 7. [移动端上 0.5px 的线](./src/移动端上0.5px的线/README.md)
-8. 没有 outline-radius 的 outline 如何实现圆角
+8. [margin 负值问题](./src/margin负值问题/README.md)
+9. [元素居中](./src/元素居中/README.md)
+10. [响应式布局](./src/响应式布局/README.md)
+11. 没有 outline-radius 的 outline 如何实现圆角
 
 ## JavaScript
+
+> 这是最好的语言，也是最坏的语言。
 
 1. [JavaScript 中的继承](./src/JavaScript中的继承/README.md)
 2. [JavaScript 中覆盖继承的对象](./src/JavaScript中覆盖继承的对象/README.md)
 3. forEach, map 中的异步函数
-4. 用 setTimeout 实现动画，以及 setTimeout 的原理。
+4. tippy.js 中是如何将 rectClient 转变为 transition 的？
 5. 类数组与数组以及类数组在 typescript 中的类型。
 6. 为什么说“函数是一等公民”
-7. number 和 Number 的区别
+7. [`string` vs `new String()`](./src/string_vs_new_string()/README.md)
 8. [为什么 0.1 + 0.2 === 0.3 返回 false](https://bvanjoi.github.io/IEEE-754-visiable/)
 9. 装饰器
 10. [JavaScript 中的 this](./src/JavaScript中的this/README.md)
 11. [JavaScript 中 call, apply, bind 的原理与实现](./src/JS中call,apply,bind的原理与实现/README.md)
-12. 闭包
+12. [JavaScript 中的闭包](./src/JavaScript中的闭包/README.md)
 13. [分离单双击事件](./src/分离单双击事件/README.md)
 14. [EventLoop](./src/事件循环/README.md)
 15. [JavaScript 中 Date 类型](./src/JavaScript的Date类型/README.md)
@@ -179,8 +189,10 @@
 19. [Fetch vs Ajax](./src/fetch_vs_ajax/README.md)
 20. [浏览器中的已拦截弹窗](./src/浏览器中的已拦截弹窗/README.md)
 21. [JavaScript 中函数中对象传参](./src/JavaScript中函数中对象传参/README.md)
-22. [`string` vs `new String()`](./src/string_vs_new_string()/README.md)
-23. tippy.js 中是如何将 rectClient 转变为 transition 的？
+22. [从图片加载来看 Promise](./src/从图片加载来看Promise/README.md)
+23. [函数表达式与函数声明的区别](./src/函数表达式与函数声明的区别/README.md)
+24. 用 setTimeout 实现动画，以及 setTimeout 的原理。
+25. requestAnimationFrame 实现动画。
 
 ### ES6
 
@@ -219,6 +231,10 @@
 2. [页面存储方式](./src/页面存储方式/README.md)
 3. [获取图片原始宽高](./src/获取图片原始宽高/README.md)
 4. [图片格式一览](./src/图片格式一览/README.md)
+5. navigator
+6. screen
+7. history
+8. location
 
 ### DOM: Document Object Model
 
@@ -228,8 +244,10 @@
 4. HTML-DOM 和 DOM Core, CSS-DOM
 5. is innerHTML asynchronous? [reference](https://stackoverflow.com/questions/42986295/is-innerhtml-asynchronous)
 6. [常见 MouseEvent 事件总结](./src/常见MouseEvent事件总结/README.md)
-7. [事件委托机制](./src/事件委托机制/README.md)
-8. shadow DOM
+7. [拖拽的实现](https://github.com/bvanjoi/draggable-demo/blob/main/index.html)
+8. [事件委托机制](./src/事件委托机制/README.md)
+9. [各式各样的宽与高](./src/各式各样的宽与高/README.md)
+10. shadow DOM
 
 ---
 
@@ -237,6 +255,8 @@
 
 1. [跨域问题](./src/跨域问题/README.md)
 2. [文件上传漏洞](./src/文件上传漏洞/README.md)
+3. XSS
+4. CSRF
 
 ---
 

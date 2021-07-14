@@ -83,7 +83,7 @@
 
 ## px 转 rem
 
-再次明确一个概念： rem 相对的是根元素 `<html>` 的 `font-size` 的值
+再次明确一个概念： rem 相对的是根元素 `<html>` 的 `font-size` 的值。
 
 因此： `n px = n / [html.font-size] rem`.
 

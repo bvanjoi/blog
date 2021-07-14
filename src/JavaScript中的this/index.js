@@ -24,6 +24,12 @@ const p = {
 p.consoleThis() // {name: 'mike', consoleThis: Function, brother: Object}
 p.brother.consoleThis() // {name: 'lucas', consoleThis: Function}
 
+class p2 {
+  consoleThis = consoleThis
+}
+
+(new p2()).consoleThis(); // p2 { consoleThis: [Function: consoleThis] }, 指向该类 
+
 // call/apply/bind 强制改变 this 指向
 consoleThis2.call(p.brother.name) // lucas
 

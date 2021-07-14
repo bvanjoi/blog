@@ -176,6 +176,7 @@ function Animal(specie) {
   this.specie = specie;
   this.arr = ['a','b'];
 }
+
 Animal.prototype.getSpecie = function() {
   return 'I\'m ' + this.specie;
 }
@@ -183,6 +184,7 @@ Animal.prototype.getSpecie = function() {
 function Cat(specie) {
   Animal.call(this, specie);
 }
+
 Cat.prototype = new Animal();
 var cat = new Cat('cat');
 cat.arr.push('c');
@@ -318,7 +320,7 @@ console.log(cat.getSpecie()); // I'm cat
 console.log(cat.getAge());    // I'm 20
 ```
 
-其实，ES6 中的 `class..extends`本质是语法糖，其本质是组合继承。
+其实，ES6 中的 `class.extends`本质是语法糖，其本质是**组合继承**。
 
 大致代码为：
 

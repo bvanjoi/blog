@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		#offset1 {
+			margin: 10px;
+			border: 1px solid black;
+			padding: 20px;
+			width: 100px;
+			height: 100px;
+		}
+
+		#offset2 {
+			box-sizing: border-box;
+			margin: 10px;
+			border: 1px solid black;
+			padding: 20px;
+			width: 100px;
+			height: 100px;
+		}
+	</style>
+</head>
+<body>
+	<div id="offset1"></div>
+	<div id="offset2"></div>
+	<script>
+		console.log('offset1.offsetHeight', offset1.offsetHeight)
+		console.log('offset2.offsetHeight', offset2.offsetHeight)
+	</script>
+</body>
+</html>

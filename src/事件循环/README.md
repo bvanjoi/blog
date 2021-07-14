@@ -14,5 +14,5 @@ EventLoop 就是为了防止主线程阻塞而出现的程序结构，它用于�
 
 ![event loop 执行机制](https://img-blog.csdnimg.cn/20210611173741105.png)
 
-- 宏任务：执行栈内的代码为一个宏任务，诸如 整体代码、`setTimeout`, `setInterval`, `I/O`, `UI` 等均可以开启一个执行栈；
-- 微任务：当前宏任务执行结束后开始执行当前轮的微任务，微任务包括：`Promise.then` 等。
+- 宏任务：执行栈内的代码为一个宏任务，诸如 整体代码、`setTimeout`, `setInterval`, `I/O`, `DOM`, `Ajax` 等均可以开启一个执行栈；
+- 微任务：当前宏任务执行结束后开始执行当前轮的微任务，微任务包括：`Promise.then`, `async/await` 等。（注意，他们都是 ES6）。

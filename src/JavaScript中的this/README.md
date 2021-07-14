@@ -1,15 +1,15 @@
 # JavaScript 中的 this
 
-JavaScript 中的 `this` 是一个繁琐复杂的概念，但是大致可以分为以下五种：
+JavaScript 中的 `this` 是一个繁琐的概念，但是大致可以分为以下五种：
 
 - 全局环境下的 `this`, 例如函数的直接调用；
-- 上下文中的 `this`, 例如调用对象中的函数；
+- 上下文中的 `this`, 例如调用对象中的函数，类中。
 - `call`, `apply`, `bind` 绑定  `this`;
 - 构造函数下的 `this`.
 
-> 上述四者的优先级从低到高。
+> 上述四者的优先级从低到高，且 `this` 均为在**执行**时确定的。
 
-- 箭头函数中的 `this`.
+- 箭头函数中的 `this`, 箭头函数中的 `this` 是在**定义**时确定的。
 
 作为示例，观察下列函数的在不同环境下的输出。
 
@@ -53,6 +53,17 @@ const p = {
 }
 p.consoleThis() // {name: 'mike', consoleThis: Function, brother: Object}
 p.brother.consoleThis() // {name: 'lucas', consoleThis: Function}
+```
+
+在 `class` 中：
+
+```js
+class p2 {
+  consoleThis = consoleThis
+}
+
+(new p2()).consoleThis(); // p2 { consoleThis: [Function: consoleThis] }
+// 指向该类 
 ```
 
 ## 用 `call`, `apply`, `bind` 改变 `this` 指向

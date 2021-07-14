@@ -41,7 +41,7 @@
 - float 除 none 之外的值；
 - position 为 fixed 或者 absolute.
 - display 为 inline-block, table-cells, table, flex 等。
-- overflow 除 hidden 的值。
+- overflow 不是 visible.
 
 ## 解决外边距折叠
 
