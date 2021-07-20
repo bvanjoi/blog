@@ -1,6 +1,6 @@
-# HTTP headers
+# HTTP Header
 
-## request headers
+## request header
 
 - Accept: 浏览器可接受的数据格式；
 - Accept-Encoding: 浏览器可以处理的压缩算法，例如 gzip.
@@ -11,7 +11,7 @@
 - User-Agent(UA): 浏览器信息；
 - Content-Type: 数据类型，例如 application/json.
 
-## response headers
+## response header
 
 - Content-Type: 返回的数据类型，例如 application/json.
 - Content-length: 返回数据大小；
@@ -19,6 +19,8 @@
 - Expires: 过期时间；
 - Set-Cookie:
 - TraceID:
-- Cache-Control: max-age=time, no-cache, no-store. 资源是否被缓存；max-age 后面的时间为缓存时间（秒）
+- Cache-Control: max-age=time, no-cache, no-store. 资源是否被缓存；max-age 后面的时间为缓存时间（秒）；no-store 不使用缓存。
+- age:
+- ETag: HTTP 1.1 中约定的特定资源标识符。其中 `W` 表示弱校验。
 
 ## 自定义 header

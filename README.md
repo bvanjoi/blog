@@ -16,7 +16,7 @@
 
 ---
 
-## 设计模式
+## pattern.js
 
 1. [数据劫持](./src/数据劫持/README.md)
 2. [查询与中断](./src/查询与中断/README.md)
@@ -24,6 +24,12 @@
 4. [构造者模式](./src/构造者模式/README.md)
 5. [单例模式](./src/单例模式/README.md)
 6. [策略模式](./src/策略模式/README.md)
+
+### immutable.js
+
+> Shared mutable state is the root of all evil.
+
+1. [OrderedMap](./src/OrderedMap/README.md)
 
 ---
 
@@ -70,7 +76,7 @@
 3. [HTTP 状态码](./src/HTTP状态码/README.md)
 4. [所谓 GET 与 POST](./src/所谓GET与POST/README.md)
 5. [图片防盗链](./src/图片防盗链/README.md)
-6. [HTTP headers](./src/http_header/README.md)
+6. [HTTP Header](./src/http_header/README.md)
 7. [HTTP 缓存](./src/HTTP缓存/README.md)
 8. [短链技术](./src/短链技术/README.md)
 9. 多路复用与打包工具
@@ -263,6 +269,7 @@
 ## ProseMirror
 
 1. [指南翻译](./src/ProseMirror/指南翻译/README.md)
+2. [ProseMirror 架构分析](./src/ProseMirror/架构分析/README.md)
 
 ---
 
