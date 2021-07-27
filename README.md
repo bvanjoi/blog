@@ -44,7 +44,8 @@
 
 ### 程序设计
 
-1. [正则序与应用序](./src/正则序与应用序/README.md)
+1. [所谓编程范式](./src/所谓编程范式/README.md)
+2. [正则序与应用序](./src/正则序与应用序/README.md)
 
 ---
 
@@ -87,8 +88,9 @@
 
 > 做语言的主人
 
-1. [将 Lisp 函数转化为 C 类函数](./src/将Lisp函数转化为C类函数/README.md)
-2. [借助 Acorn 实现 JavaScript 自定义语法](./src/借助Acorn实现JavaScript自定义语法/README.md)
+1. [编译流程概览](./src/编译流程概览/README.md)
+2. [将 Lisp 函数转化为 C 类函数](./src/将Lisp函数转化为C类函数/README.md)
+3. [借助 Acorn 实现 JavaScript 自定义语法](./src/借助Acorn实现JavaScript自定义语法/README.md)
 
 ---
 
@@ -147,6 +149,10 @@
 
 ---
 
+## Haskell
+
+---
+
 ## HTML
 
 1. [HTML 中异步加载 JS 文件](./src/HTML中异步加载JS文件/README.md)
@@ -179,7 +185,7 @@
 3. forEach, map 中的异步函数
 4. tippy.js 中是如何将 rectClient 转变为 transition 的？
 5. 类数组与数组以及类数组在 typescript 中的类型。
-6. 为什么说“函数是一等公民”
+6. requestAnimationFrame 实现动画。
 7. [`string` vs `new String()`](./src/string_vs_new_string()/README.md)
 8. [为什么 0.1 + 0.2 === 0.3 返回 false](https://bvanjoi.github.io/IEEE-754-visiable/)
 9. 装饰器
@@ -198,7 +204,6 @@
 22. [从图片加载来看 Promise](./src/从图片加载来看Promise/README.md)
 23. [函数表达式与函数声明的区别](./src/函数表达式与函数声明的区别/README.md)
 24. 用 setTimeout 实现动画，以及 setTimeout 的原理。
-25. requestAnimationFrame 实现动画。
 
 ### ES6
 
@@ -269,7 +274,7 @@
 ## ProseMirror
 
 1. [指南翻译](./src/ProseMirror/指南翻译/README.md)
-2. [ProseMirror 架构分析](./src/ProseMirror/架构分析/README.md)
+2. [model 源码解读](./src/ProseMirror/架构分析/1.model源码解读.md)
 
 ---
 
