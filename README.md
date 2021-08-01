@@ -141,11 +141,12 @@
 
 > 多年之后，奥雷连诺上校站在内存溢出的程序前，会想起技术沙龙上没好好听 Rust 的那个遥远的下午。
 
-1. [Rust-learn: 1. 从安装到 Hello World](./src/Rust-learn/1.安装/README.md)
-2. [Rust-learn: 2. 15 分钟学 Rust](./src/Rust-learn/2.通用编程概念/README.md)
-3. [Rust-learn: 3. Rust 中的分号](./src/Rust-learn/3.Rust中的分号/README.md)
-4. [Rust-learn: 4. 用 Rust 写一棵二叉树](./src/Rust-learn/4.用Rust写一棵二叉树/README.md)
-5. Rust 这种内存安全的语言是如何处理闭包的？
+1. [Rust 的编译期计算](./src/Rust的编译期计算/README.md)
+2. [Rust-learn: 1. 从安装到 Hello World](./src/Rust-learn/1.安装/README.md)
+3. [Rust-learn: 2. 15 分钟学 Rust](./src/Rust-learn/2.通用编程概念/README.md)
+4. [Rust-learn: 3. Rust 中的分号](./src/Rust-learn/3.Rust中的分号/README.md)
+5. [Rust-learn: 4. 用 Rust 写一棵二叉树](./src/Rust-learn/4.用Rust写一棵二叉树/README.md)
+6. Rust 这种内存安全的语言是如何处理闭包的？
 
 ---
 
@@ -178,7 +179,7 @@
 
 ## JavaScript
 
-> 这是最好的语言，也是最坏的语言。
+> 它的优秀之处并非原创，它的原创之处并不优秀。
 
 1. [JavaScript 中的继承](./src/JavaScript中的继承/README.md)
 2. [JavaScript 中覆盖继承的对象](./src/JavaScript中覆盖继承的对象/README.md)
@@ -218,23 +219,10 @@
 
 ### TypeScript
 
-1. 元组
-2. [TypeScript 中的 interface 和 type](./src/TypeScript中的interface和type/README.md)
-3. [用 type 替换 enum](./src/用type替换enum/README.md)
-4. typescript 中的面向对象。
-5. implements
-6. Enum 的实现方式，常量枚举，以及
-
-    ```ts
-    enum Direction {
-      Up,
-      Down
-    }
-
-    console.log( 0 === Direction.Up)
-    ```
-
-7. 范型
+1. [TypeScript 中的 interface 和 type](./src/TypeScript中的interface和type/README.md)
+2. [用 type 替换 enum](./src/用type替换enum/README.md)
+3. implements
+4. 范型
 
 ### BOM: Browser Object Model
 

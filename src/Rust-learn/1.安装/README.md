@@ -47,11 +47,11 @@ rustc --version
 
 本来想起小标题为 “IDE 选择”，但感觉 VSCode 不算 IDE, 所以还是舍弃了。
 
-个人建议以下两种方式：
+个人建议以下几种方式：
 
-- VSCode + Rust 插件 + Code Runner 插件
+- VSCode + rust-analyzer + Code Runner 插件
+- VSCode + Cargo + rust-analyzer.
 - CLion + Rust 插件
-- SpaceVim + Rust 语法
 
 ## 再从 Hello World 出发
 
