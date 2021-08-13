@@ -38,6 +38,7 @@
     - webpack5 中 module.rules[].type: 'asset', 并用 Module.Parse.rule 规定大小
   - 对于 CDN 上的资源，适当使用 强缓存/协议缓存。contenthash 等实现缓存。
 - Service Worker 使得其可以离线浏览。
+- 编译期计算
 
 ---
 

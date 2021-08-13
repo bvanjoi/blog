@@ -140,7 +140,7 @@ ProseMirror 官方提供了一套基础的 键-命令 的集合：
 
 ### Structure
 
-首先要定义的是 文档（Document）的模型，document 是一个 `Node` 对象，其中包含了一个 `Fragment`, 所谓 `Fragment`, 是指包含多个 `Node` 的数据结构。
+首先要定义的是 文档（Document）的模型，document 是一个 `Node` 对象，其中包含了一个 `Fragment`, 所谓 `Fragment`, 是指包含零个或者多个 `Node` 的数据结构。
 
 这看起来像是浏览器 DOM, 虽然 ProseMirror 中也是以树状递归来存储 Node, 但是对于 **内联元素** 而言，二者有些不同：
 
