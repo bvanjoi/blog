@@ -319,7 +319,8 @@
 2. [React 中自定义组件头字母为什么要大写？](./src/React中自定义组件头字母为什么要大写/README.md)
 3. [React 中的 key](./src/React中的key/README.md)
 4. [class 组件中为什么设计成需要 bind](./src/class组件中为什么设计成需要bind/README.md)
-5. [(WIP)styled-components 的实现原理](./src/styled-components的实现原理/README.md)
+5. [函数式组件中渲染两次的问题](./src/函数式组件中渲染两次的问题/README.md)
+6. [(WIP)styled-components 的实现原理](./src/styled-components的实现原理/README.md)
 
 ### React 类型系统
 
