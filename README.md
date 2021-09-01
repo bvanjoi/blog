@@ -207,7 +207,8 @@
 21. [JavaScript 中函数中对象传参](./src/JavaScript中函数中对象传参/README.md)
 22. [从图片加载来看 Promise](./src/从图片加载来看Promise/README.md)
 23. [函数表达式与函数声明的区别](./src/函数表达式与函数声明的区别/README.md)
-24. 用 setTimeout 实现动画，以及 setTimeout 的原理。
+24. [JavaScript 糟粕](./src/JavaScript糟粕/README.md)
+25. 用 setTimeout 实现动画，以及 setTimeout 的原理。
 
 ### ES6
 
