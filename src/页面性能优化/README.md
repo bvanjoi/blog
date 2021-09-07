@@ -13,6 +13,7 @@
   - 开启 HMR, 保证按需热更新: devServe.hot. 若不开启该功能时，修改某个 js/css 代码，会导致整个页面的重新打包。
   - babel-loader.options.cacheDirectory, 当它开启时，webpack 打包时会先检查 node_module/.cache/babel-loader, 并据此重新打包 js。
 - thread-loader 开启多进程打包，因为它是一个 node 服务，进程启动约 600ms, 因此，建议在耗时比较长的打包中使用.
+- 对于 ts-loader, 通过 `options: {transpilerOnly: true}` 关闭类型检查，进而减少打包开销（ESBuild 即采用这种策略）。
 
 ## 生产环境
 
