@@ -121,7 +121,7 @@ if (resp === 'Success') {
 
 `enum` 存在以下问题：
 
-1. `enum` 只是 js 语法糖而已, 正如示例所示，在 ts 中声明 `Direction` 会被编译成 js 中的对象，这种行为会增加冗余的代码量，并进一步包的体积。当然，可以使用 `const enum` 来解决上述问题，例如：
+1. `enum` 只是 js 语法糖而已, 正如示例所示，在 ts 中声明 `Direction` 会被编译成 js 中的对象，这种行为会增加冗余的代码量，并进一步包的体积（并且无法被 tree shaking 掉）。当然，可以使用 `const enum` 来解决上述问题（也只有在 rollup 中 `const enum` 会被 tree shaking），例如：
 
     ```ts
     // ts 中
