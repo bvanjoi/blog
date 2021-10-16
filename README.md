@@ -144,7 +144,6 @@
 6. [Rust-learn: 3. Rust 中的分号](./src/Rust-learn/3.Rust中的分号/README.md)
 7. [Rust-learn: 4. 用 Rust 写一棵二叉树](./src/Rust-learn/4.用Rust写一棵二叉树/README.md)
 8. [Rust-learn: 5. trait](./src/Rust-learn/5.trait/README.md)
-9. Rust 这种内存安全的语言是如何处理闭包的？
 
 ---
 

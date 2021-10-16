@@ -59,3 +59,12 @@ Rust 对 Trait 有一个要求：当为某类型实现某 tarit 时，必要求�
 上述要求是为了实现 Rust 类型推断。
 
 ## 常见的 Trait
+
+- Deref
+- Drop
+- Debug
+- PartialEq, Eq
+- PartialOrd Ord
+- Clone COpy
+- Default
+- Hash
