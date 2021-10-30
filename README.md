@@ -262,7 +262,6 @@
 ## ProseMirror
 
 1. [指南翻译](./src/ProseMirror/指南翻译/README.md)
-2. [model 源码解读](./src/ProseMirror/架构分析/1.model源码解读.md)
 
 ---
 
@@ -335,3 +334,9 @@
 ## 机器学习
 
 1. [k-近邻算法](./src/k近邻算法/README.md)
+
+---
+
+## 工作总结
+
+1. [从测试覆盖率到开源库的 PR](./src/工作总结/从测试覆盖率到开源库的PR.md)
