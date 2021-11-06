@@ -271,6 +271,7 @@
 2. [JavaScript 模块化发展](./src/JavaScript模块化发展/README.md)
 3. [mono-repo 之从 npm link 到 lerna](./src/mono-repo之从npm%20link到lerna/README.md)
 4. [页面性能优化](./src/页面性能优化/README.md)
+5. [幻影依赖](./src/幻影依赖/README.md)
 
 ### 包管理工具
 
