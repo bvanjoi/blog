@@ -6,7 +6,7 @@
 
 在 Node 中，如果引入了模块 A, 则模块 B, C, D 被下载到项目内的 `node_modules` 中，例如，在空目录下仅仅执行 `npm install minimatch@3.0.4 --save && npm install rimraf --save-dev`, 其目录结构为：
 
-![目录结构](https://img-blog.csdnimg.cn/584f754023db4e12bf638aacd8bbe57a.png)
+![目录结构](https://img-blog.csdnimg.cn/44a8116f4b2846e989c3e9bee8de7f54.png)
 
 此时出现了问题，我们仅仅安装了两个库 `minimatch` 和 `rimraf`, 但是为什么模块如此之多？
 
@@ -25,7 +25,7 @@ console.log(pkgNotExistsInDep2)
 // [Function: wrappy]
 ```
 
-上述 `balanced-match` 和 `wrappy` 即位幻影依赖。
+上述 `balanced-match` 和 `wrappy` 即为幻影依赖。
 
 ## 幻影依赖导致的问题
 
