@@ -27,8 +27,8 @@ class Sub extends Base {
   }
 }
 
-const b = new Base();
+const base1 = new Base();
 const s = new Sub();
-b.BaseAll.b1()
+base1.BaseAll.b1()
 s.BaseAll.b1();
 s.BaseAll.b2();

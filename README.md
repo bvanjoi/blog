@@ -223,8 +223,7 @@
 
 1. [TypeScript 中的 interface 和 type](./src/TypeScript中的interface和type/README.md)
 2. [用 type 替换 enum](./src/用type替换enum/README.md)
-3. implements
-4. 范型
+3. [协变、逆变、双变](./src/协变与逆变与双变/README.md)
 
 ### BOM: Browser Object Model
 
