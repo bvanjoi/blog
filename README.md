@@ -205,7 +205,8 @@
 22. [从图片加载来看 Promise](./src/从图片加载来看Promise/README.md)
 23. [函数表达式与函数声明的区别](./src/函数表达式与函数声明的区别/README.md)
 24. [JavaScript 糟粕](./src/JavaScript糟粕/README.md)
-25. 用 setTimeout 实现动画，以及 setTimeout 的原理。
+25. [JavaScript Coverage: 从 NYC 到 C8](./src/JavaScript_Coverage:从NYC到C8/README.md)
+26. 用 setTimeout 实现动画，以及 setTimeout 的原理。
 
 ### ES6
 
