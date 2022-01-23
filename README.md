@@ -139,11 +139,12 @@
 1. [Rust 执行流程](./src/Rust执行流程/README.md)
 2. [Rust 的编译期计算](./src/Rust的编译期计算/README.md)
 3. [Rust 中内存对齐](./src/Rust中内存对齐/README.md)
-4. [Rust-learn: 1. 从安装到 Hello World](./src/Rust-learn/1.安装/README.md)
-5. [Rust-learn: 2. 15 分钟学 Rust](./src/Rust-learn/2.通用编程概念/README.md)
-6. [Rust-learn: 3. Rust 中的分号](./src/Rust-learn/3.Rust中的分号/README.md)
-7. [Rust-learn: 4. 用 Rust 写一棵二叉树](./src/Rust-learn/4.用Rust写一棵二叉树/README.md)
-8. [Rust-learn: 5. trait](./src/Rust-learn/5.trait/README.md)
+4. [Rust 中的内存泄漏](./src/Rust中的内存泄漏/README.md)
+5. [Rust-learn: 1. 从安装到 Hello World](./src/Rust-learn/1.安装/README.md)
+6. [Rust-learn: 2. 15 分钟学 Rust](./src/Rust-learn/2.通用编程概念/README.md)
+7. [Rust-learn: 3. Rust 中的分号](./src/Rust-learn/3.Rust中的分号/README.md)
+8. [Rust-learn: 4. 用 Rust 写一棵二叉树](./src/Rust-learn/4.用Rust写一棵二叉树/README.md)
+9. [Rust-learn: 5. trait](./src/Rust-learn/5.trait/README.md)
 
 ---
 
