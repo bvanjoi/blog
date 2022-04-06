@@ -21,7 +21,7 @@ let a = new node(new node(null));
 
 ![JavaScript 内实现链表](https://img-blog.csdnimg.cn/4e743603c0514199b97fc510cb1857cd.png)
 
-而在 Rust 中，一切变的复杂起来。
+而在 Rust 中，一切变得复杂起来。
 
 ### 最简单的写法
 

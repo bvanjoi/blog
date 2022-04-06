@@ -117,10 +117,10 @@
 2. `fgets` 的用途 CSAPP 3.71
 3. 在 C 语言中写汇编 CSAPP 3.73, 3.74
 
-### GDB
+### 调试
 
 1. [GDB 入门](./src/GDB入门/README.md)
-2. DDD 入门
+2. [LLDB 入门](./src/LLDB入门/README.md)
 
 ---
 
@@ -276,7 +276,7 @@
 3. [mono-repo 之从 npm link 到 lerna](./src/mono-repo之从npm%20link到lerna/README.md)
 4. [页面性能优化](./src/页面性能优化/README.md)
 5. [幻影依赖](./src/幻影依赖/README.md)
-
+6. [RushJS 中使用 commitlint](./src/RushJS中使用commitlint/README.md)
 ### 包管理工具
 
 1. [package.json 常见字段](./src/package.json常见字段/README.md)
