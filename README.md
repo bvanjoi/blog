@@ -277,9 +277,11 @@
 4. [页面性能优化](./src/页面性能优化/README.md)
 5. [幻影依赖](./src/幻影依赖/README.md)
 6. [RushJS 中使用 commitlint](./src/RushJS中使用commitlint/README.md)
+
 ### 包管理工具
 
 1. [package.json 常见字段](./src/package.json常见字段/README.md)
+2. [package.json 中与 resolve 相关的字段](./src/package.json中与resolve相关的字段/README.md)
 
 ### Babel
 

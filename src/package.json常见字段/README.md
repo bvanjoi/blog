@@ -190,7 +190,7 @@ npm 中 `package.json` 文件用来声明该目录为一个包。
 
 ### 发布配置文件 `files`
 
-- `files`: 字符串数组，用以描述 `npm publish` 时候推送到 `npm` 服务器中的文件列表。
+- `files`: 字符串数组，用以描述 `npm publish` 时候推送到 `npm` 上的文件列表。
 
 例如：
 
@@ -291,6 +291,81 @@ npm 中 `package.json` 文件用来声明该目录为一个包。
 ### `cpu`
 
 - `cpu`: 字符串数组，指定包运行的 CPU 架构。
+
+### `exports`
+
+- `exports`: 约束了通过 **`node_modules` 引入**或**自我引用**或者的库的入口文件，其类型为 `Object | string | string[]`.
+
+例如：
+
+```json
+{
+  "name": "a",
+  "exports": "./lib-a.js"
+}
+```
+
+则 `require("a")` 会寻找 `./lib-a.js`. 同时由于 `exports` 限制了其他文件的导出，因此 `require('a/xxx')` 会失败。
+
+再例如：
+
+```json
+{
+  "name": "a",
+  "exports": ["./lib-a.js", "./lib-b.js"]
+}
+```
+
+此时 `require("a")` 会依次寻找 `./lib-a.js` 和 `./lib-b.js`, 哪个文件存在则返回哪个。
+
+再比如：
+
+```json
+{
+  "name": "a",
+  "exports": {
+    ".": "./lib-a.js",
+    "./utils/*": "./src/*"
+  }
+}
+```
+
+此时 `require("a")` 会寻找 `./lib-a.js`; `require("a/utils/index.js")` 会寻找 `./src/index.js`.
+
+另外，`exports` 对象还可以是嵌套对象，例如：
+
+```json
+{
+  "name": "a",
+  "exports": {
+     "./utils/": {
+            "browser": {
+                "webpack": ["./", "./node/"],
+                "default": {
+                    "node": {
+                        "webpack": ["./wpck/"]
+                    }
+                }
+            }
+        }
+  }
+}
+```
+
+此时，需要结合 condition_name 来使用。
+
+需要注意的是，`exports` 字段存在一定限制，例如对象中不能混合使用相对路径和 conditional_name, 不能使用绝对路径， "default" 字段需要放到对象的最后。
+
+更详细可见 (package.json 中与 resolve 相关的字段)[../package.json中与resolve相关的字段/README.md]。
+
+### `imports`
+
+`imports` 字段是一个对象，它负责将指定引入的文件映射到其余的包或文件上。
+
+需要注意的是，`imports` 对象中的每个 key 必须以 `"#"` 开头。
+
+更详细可见 (package.json 中与 resolve 相关的字段)[../package.json中与resolve相关的字段/README.md]。
+
 
 ## 总结
 
