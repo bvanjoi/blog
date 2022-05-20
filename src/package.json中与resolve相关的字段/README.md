@@ -1,6 +1,6 @@
 # package.json 中与 resolve 相关的字段
 
-当在 Node 中通过 `require` 或者 `require.resolve` 来解析一个文件时，Node 首先会到找最近的 `package.json` 文件并对其进行[处理](https://github.com/nodejs/node/blob/master/lib/internal/modules/esm/resolve.js#L1213)。本文将来梳理 `package.json` 中与 resolve 相关的字段及其功能。
+当在 Node 中通过 `require` 或者 `require.resolve` 来解析一个文件时，Node 首先会寻找最近的 `package.json` 文件并对其进行[处理](https://github.com/nodejs/node/blob/master/lib/internal/modules/esm/resolve.js#L1213)。本文将来梳理 `package.json` 中与 resolve 相关的字段及其功能。
 
 ## 入口文件字段 `main`
 
