@@ -46,9 +46,10 @@
 
 ## 算法与数据结构
 
+1. [兑换零钱](./src/兑换零钱/README.md)
 1. N 皇后的两种解法：回溯与 SAT
 2. 蓄水池抽样算法 leetcode 382
-3. 更多可见算法与数据结构可见[Rust 实现算法](https://github.com/bvanjoi/Algorithm)
+
 
 ### 数论
 
