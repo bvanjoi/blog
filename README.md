@@ -32,7 +32,7 @@
 ### 数据表示
 
 1. 遵从 IEEE 754 表示的浮点数不能精确表示的最小整数 CSAPP 2.49
-2. 使用位运算来判断二进制中是否包含奇数个 1.  CSAPP 2.65
+2. 使用位运算来判断二进制中是否包含奇数个 1. CSAPP 2.65
 3. 二进制中最左侧的 1. CSAPP 2.66
 
 ### 程序设计
@@ -48,8 +48,7 @@
 
 1. [兑换零钱](./src/兑换零钱/README.md)
 1. N 皇后的两种解法：回溯与 SAT
-2. 蓄水池抽样算法 leetcode 382
-
+1. 蓄水池抽样算法 leetcode 382
 
 ### 数论
 
@@ -87,6 +86,10 @@
 1. [编译流程概览](./src/编译流程概览/README.md)
 2. [将 Lisp 函数转化为 C 类函数](./src/将Lisp函数转化为C类函数/README.md)
 3. [借助 Acorn 实现 JavaScript 自定义语法](./src/借助Acorn实现JavaScript自定义语法/README.md)
+4. [基本块与控制流图](./src/bb_and_cfg/README.md)
+5. [数据流分析 —— 定义可达性](./src/定义可达性/README.md)
+6. [数据流分析 —— 存活变量](./src/存活变量/README.md)
+7. [数据流分析 —— 有效表达时](./src/有效表达式/README.md)
 
 ---
 
@@ -99,7 +102,6 @@
 1. [虚拟化中的三种网络模式](./src/虚拟化中的三种网络模式/README.md)
 2. [Linux 常见指令](./src/Linux/Linux常见指令.md)
 3. [Linux 目录结构](./src/Linux/Linux目录结构.md)
-
 
 ### Vim
 
@@ -176,7 +178,8 @@
 9. [元素居中](./src/元素居中/README.md)
 10. [响应式布局](./src/响应式布局/README.md)
 11. [CSS 中的 `@import`](./src/CSS中的import/README.md)
-12. 没有 outline-radius 的 outline 如何实现圆角
+12. [CSS, Less, Sass 中的 resolve 规则](./src/css,less,sass中的resolve规则/README.md)
+13. 没有 outline-radius 的 outline 如何实现圆角
 
 ## JavaScript
 
@@ -188,7 +191,7 @@
 4. tippy.js 中是如何将 rectClient 转变为 transition 的？
 5. 类数组与数组以及类数组在 typescript 中的类型。
 6. requestAnimationFrame 实现动画。
-7. [`string` vs `new String()`](./src/string_vs_new_string()/README.md)
+7. [`string` vs `new String()`](<./src/string_vs_new_string()/README.md>)
 8. [为什么 0.1 + 0.2 === 0.3 返回 false](https://bvanjoi.github.io/IEEE-754-visiable/)
 9. 装饰器
 10. [JavaScript 中的 this](./src/JavaScript中的this/README.md)
@@ -219,7 +222,7 @@
 
 1. [node 中变量占用了多少内存](./src/node中变量占用了多少内存/README.md)
 2. [Node 内调用 Native 代码](./src/Node内调用Native代码/README.md)
-3. 从 I/O 密集与 CPU 密集谈一谈 node.js （单线程，异步，非阻塞I/O, 事件驱动，node 中间层的实际作用）
+3. 从 I/O 密集与 CPU 密集谈一谈 node.js （单线程，异步，非阻塞 I/O, 事件驱动，node 中间层的实际作用）
 4. node 在控制台的输出带样式及原理
 
 ### TypeScript
@@ -278,11 +281,8 @@
 5. [幻影依赖](./src/幻影依赖/README.md)
 6. [RushJS 中使用 commitlint](./src/RushJS中使用commitlint/README.md)
 7. [Define 的设计与实现](./src/define的设计与实现/README.md)
-
-### 包管理工具
-
-1. [package.json 常见字段](./src/package.json常见字段/README.md)
-2. [package.json 中与 resolve 相关的字段](./src/package.json中与resolve相关的字段/README.md)
+8. [package.json 常见字段](./src/package.json常见字段/README.md)
+9. [package.json 中与 resolve 相关的字段](./src/package.json中与resolve相关的字段/README.md)
 
 ### Babel
 
@@ -327,12 +327,6 @@
 
 1. [函数组件中不建议使用 React.FC](./src/React类型系统/函数组件中不建议使用React.FC/README.md)
 2. [React 与 ReactDOM 中类型](./src/React类型系统/React与ReactDOM中类型/README.md)
-
----
-
-## Hybrid
-
-1. [Hybrid 入门](./src/Hybrid入门/README.md)
 
 ---
 
