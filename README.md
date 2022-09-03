@@ -2,18 +2,6 @@
 
 > 承认痛苦的无用性。
 
-## 软件工程
-
-### DevOps
-
-> 只要你做的足够糟，DevOps 就能极大地降低部署效率。
-
-1. [DevOps 流程](./src/DevOps/README.md)
-
-### CI/CD
-
-1. [GitLab-CI/CD](./src/CICD/README.md)
-
 ---
 
 ## pattern.js
@@ -81,8 +69,6 @@
 
 ## 编译技术
 
-> 做语言的主人
-
 1. [编译流程概览](./src/编译流程概览/README.md)
 2. [将 Lisp 函数转化为 C 类函数](./src/将Lisp函数转化为C类函数/README.md)
 3. [借助 Acorn 实现 JavaScript 自定义语法](./src/借助Acorn实现JavaScript自定义语法/README.md)
@@ -96,6 +82,7 @@
 ## Unix
 
 1. [Shebang](./src/Shebang/README.md)
+2. [Bash Script](./src/bash-script/README.md)
 
 ### Linux
 
@@ -187,30 +174,24 @@
 
 1. [JavaScript 中的继承](./src/JavaScript中的继承/README.md)
 2. [JavaScript 中覆盖继承的对象](./src/JavaScript中覆盖继承的对象/README.md)
-3. forEach, map 中的异步函数
-4. tippy.js 中是如何将 rectClient 转变为 transition 的？
-5. 类数组与数组以及类数组在 typescript 中的类型。
-6. requestAnimationFrame 实现动画。
-7. [`string` vs `new String()`](<./src/string_vs_new_string()/README.md>)
-8. [为什么 0.1 + 0.2 === 0.3 返回 false](https://bvanjoi.github.io/IEEE-754-visiable/)
-9. 装饰器
-10. [JavaScript 中的 this](./src/JavaScript中的this/README.md)
-11. [JavaScript 中 call, apply, bind 的原理与实现](./src/JS中call,apply,bind的原理与实现/README.md)
-12. [JavaScript 中的闭包](./src/JavaScript中的闭包/README.md)
-13. [分离单双击事件](./src/分离单双击事件/README.md)
-14. [EventLoop](./src/事件循环/README.md)
-15. [JavaScript 中 Date 类型](./src/JavaScript的Date类型/README.md)
-16. [JavaScript 中的深浅拷贝](./src/JavaScript中的深浅拷贝/README.md)
-17. [节流与防抖](./src/节流与防抖/README.md)
-18. [从示例来看 Ajax](./src/从示例来看Ajax/README.md)
-19. [Fetch vs Ajax](./src/fetch_vs_ajax/README.md)
-20. [浏览器中的已拦截弹窗](./src/浏览器中的已拦截弹窗/README.md)
-21. [JavaScript 中函数中对象传参](./src/JavaScript中函数中对象传参/README.md)
-22. [从图片加载来看 Promise](./src/从图片加载来看Promise/README.md)
-23. [函数表达式与函数声明的区别](./src/函数表达式与函数声明的区别/README.md)
-24. [JavaScript 糟粕](./src/JavaScript糟粕/README.md)
-25. [JavaScript Coverage: 从 NYC 到 C8](./src/JavaScript_Coverage:从NYC到C8/README.md)
-26. 用 setTimeout 实现动画，以及 setTimeout 的原理。
+3. [`string` vs `new String()`](<./src/string_vs_new_string()/README.md>)
+4. [为什么 0.1 + 0.2 === 0.3 返回 false](https://bvanjoi.github.io/IEEE-754-visiable/)
+5. [JavaScript 中的 this](./src/JavaScript中的this/README.md)
+6. [JavaScript 中 call, apply, bind 的原理与实现](./src/JS中call,apply,bind的原理与实现/README.md)
+7. [JavaScript 中的闭包](./src/JavaScript中的闭包/README.md)
+8. [分离单双击事件](./src/分离单双击事件/README.md)
+9. [EventLoop](./src/事件循环/README.md)
+10. [JavaScript 中 Date 类型](./src/JavaScript的Date类型/README.md)
+11. [JavaScript 中的深浅拷贝](./src/JavaScript中的深浅拷贝/README.md)
+12. [节流与防抖](./src/节流与防抖/README.md)
+13. [从示例来看 Ajax](./src/从示例来看Ajax/README.md)
+14. [Fetch vs Ajax](./src/fetch_vs_ajax/README.md)
+15. [浏览器中的已拦截弹窗](./src/浏览器中的已拦截弹窗/README.md)
+16. [JavaScript 中函数中对象传参](./src/JavaScript中函数中对象传参/README.md)
+17. [从图片加载来看 Promise](./src/从图片加载来看Promise/README.md)
+18. [函数表达式与函数声明的区别](./src/函数表达式与函数声明的区别/README.md)
+19. [JavaScript 糟粕](./src/JavaScript糟粕/README.md)
+20. [JavaScript Coverage: 从 NYC 到 C8](./src/JavaScript_Coverage:从NYC到C8/README.md)
 
 ### ES6
 
@@ -329,13 +310,3 @@
 2. [React 与 ReactDOM 中类型](./src/React类型系统/React与ReactDOM中类型/README.md)
 
 ---
-
-## 机器学习
-
-1. [k-近邻算法](./src/k近邻算法/README.md)
-
----
-
-## 工作总结
-
-1. [从测试覆盖率到开源库的 PR](./src/工作总结/从测试覆盖率到开源库的PR.md)
