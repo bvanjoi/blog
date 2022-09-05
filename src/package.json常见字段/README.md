@@ -93,15 +93,13 @@ npm 中 `package.json` 文件用来声明该目录为一个包。
 - `"webpack": "^5.34.0"`: 是指拉取最新的 Minor 版本，即可能增加新功能，但不会引起 API 破坏性变动；
 - `"lerna": "4.0.0"`: 指定 `4.0.0` 版本。
 
-当然，依赖的版本控制的方法远比上述多很多。
-
-甚至也可以通过 `file` 来指向本地，例如 `foo: file:../foo`.
+当然，依赖的版本控制的协议不止于语义化版本：也可以通过 `file` 来指向本地，例如 `foo: file:../foo`, 还有 `workspace`, `path`, `git` 等。
 
 ### `peerDependencies`
 
-- `peerDependencies`: 简单而言，该字段用于防止多次引入相同的库。
+- `peerDependencies`: 如果项目作为三方库被安装时，希望某些库也被用户安装上，进而保证使用时用到用户自身安装的库，则可将这些库声明到 peerDependencies 字段上。最常见的示例为 [react-dom](https://github.com/facebook/react/blob/main/packages/react-dom/package.json#L23).
 
-例如，某个项目存在依赖 A, 而 A 项目中的 `peerDependencies` 包含字段 B, 则 `npm install` 之后的目录结构为：
+例如，某个项目存在依赖 A, 而 A 项目中的 `peerDependencies` 包含字段 B, 则预期的目录结构为：
 
 ```txt
 |-node_modules
@@ -121,7 +119,7 @@ npm 中 `package.json` 文件用来声明该目录为一个包。
 
 在 `dependencies` 中定义的库，如果安装失败，项目便会跑出错误并停止执行。
 
-- `optionalDependencies`: 对象类型，其中存储的依赖即使安装失败也不会导致项目中止运行。当然，需要在代码中做好兜底。
+- `optionalDependencies`: 对象类型，其中存储的依赖即使安装失败也不会导致项目中止运行。当然，需要在代码中做好兜底。经典的示例为 [esbuild](https://github.com/evanw/esbuild/blob/master/npm/esbuild/package.json#L17),
 
 ### 脚本文件 `bin`
 

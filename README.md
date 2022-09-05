@@ -255,15 +255,15 @@
 
 ## 前端工程
 
-1. [前端常用工具](./src/前端常用工具一览/README.md)
-2. [JavaScript 模块化发展](./src/JavaScript模块化发展/README.md)
-3. [mono-repo 之从 npm link 到 lerna](./src/mono-repo之从npm%20link到lerna/README.md)
-4. [页面性能优化](./src/页面性能优化/README.md)
-5. [幻影依赖](./src/幻影依赖/README.md)
-6. [RushJS 中使用 commitlint](./src/RushJS中使用commitlint/README.md)
-7. [Define 的设计与实现](./src/define的设计与实现/README.md)
-8. [package.json 常见字段](./src/package.json常见字段/README.md)
-9. [package.json 中与 resolve 相关的字段](./src/package.json中与resolve相关的字段/README.md)
+1. [JavaScript 模块化发展](./src/JavaScript模块化发展/README.md)
+2. [mono-repo 之从 npm link 到 lerna](./src/mono-repo之从npm%20link到lerna/README.md)
+3. [页面性能优化](./src/页面性能优化/README.md)
+4. [幻影依赖](./src/幻影依赖/README.md)
+5. [RushJS 中使用 commitlint](./src/RushJS中使用commitlint/README.md)
+6. [Define 的设计与实现](./src/define的设计与实现/README.md)
+7. [package.json 常见字段](./src/package.json常见字段/README.md)
+8. [package.json 中与 resolve 相关的字段](./src/package.json中与resolve相关的字段/README.md)
+9. [常见包管理工具的依赖管理策略](./src/常见包管理工具的依赖管理策略/README.md)
 
 ### Babel
 
@@ -308,5 +308,3 @@
 
 1. [函数组件中不建议使用 React.FC](./src/React类型系统/函数组件中不建议使用React.FC/README.md)
 2. [React 与 ReactDOM 中类型](./src/React类型系统/React与ReactDOM中类型/README.md)
-
----
